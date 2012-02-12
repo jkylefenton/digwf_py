@@ -1,4 +1,5 @@
 # Django settings for digwf_py project.
+import os.path
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -103,11 +104,14 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'digwf_py.urls'
 
+PROJECT_DIR = os.path.dirname(__file__)  # this is not a Django setting
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/jfenton/djcode/digwf_py/templates',
+    os.path.join(PROJECT_DIR, "templates"),
+    os.path.join(PROJECT_DIR, "templates/digwf"),
+    os.path.join(PROJECT_DIR, "templates/repo_checker"),
 )
 
 INSTALLED_APPS = (
