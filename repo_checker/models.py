@@ -63,3 +63,10 @@ class HathiTrust_Item(models.Model):
     bibl_format = models.CharField(max_length=2, blank=True, db_index=True) # Bibliographic format (BK, SE, CF, MP, MU, VM, or MX)
     local_created = models.DateField(auto_now_add=True) # a local Emory date created field, useful for building OAI-PMH feeds
     local_last_modified = models.DateField(auto_now=True) # a local Emory last modified field, useful for building OAI-PMH feeds
+
+class Works(models.Model):
+    '''Lists distinct OCLC numbers, ISBN, ISSN, and/or LCCN of works that are in EU, HT or OL'''
+    oclc = models.CharField(max_length=16, blank=True, db_index=True, unique=True) # OCLC number(s) for the bibliographic record, leading 0's, 'ocm' or 'ocn' stripped. Where more than one number is listed, they are comma-delimited.
+    isbn = models.CharField(max_length=255, blank=True, db_index=True, unique=True) # ISBN(s) for the bibliographic record. Where more than one number is listed, they are comma-delimited.
+    issn = models.CharField(max_length=90, blank=True, db_index=True, unique=True) # ISSN(s) for the bibliographic record. Where more than one number is listed, they are comma-delimited.
+    lccn = models.CharField(max_length=12, blank=True, db_index=True, unique=True) # LCCN(s) for the bibliographic record. Where more than one number is listed, they are comma-delimited.
