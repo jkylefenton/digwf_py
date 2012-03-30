@@ -11,14 +11,13 @@ class ItemAdmin(admin.ModelAdmin):
             (None, {
                     'fields': ('time_spent', 
                                'user', 
-                               'title', 
-                               'collection', 
+                               'item_title', 
+                               'collection_id', 
                                'enumcron', 
-                               'batch_order', 
+                               'order_id', 
                                'workflow_step', 
-                               'images_captured_count', 
                                'foldout_count', 
-                               'rush', 
+                               'is_rush', 
                                'notification_email', 
                                'due_date', 
                                'is_digitized', 
@@ -37,7 +36,45 @@ class ItemAdmin(admin.ModelAdmin):
                              'pub_state', 
                              'pub_place', 
                              'pub_year', ), }),                 
-            ('Outputs File Paths', {
+            ('Characteristics of Original', {  
+                    'fields': ('is_brittle', 
+                               #                               'is_cataloged', 
+                               #                               'has_foldouts', 
+                               'is_paginated', 
+                               'has_binding', 
+                               'is_serial', 
+                               'is_resource_type', 
+                               'has_typeset_text', ), }),
+            (None, {
+                  'fields': ( 'rejection_code', 
+                             'note', ) }),
+                 )
+    inlines = [Metadata_TermInline]
+    search_fields = ('item_title', 
+                     'oclc',
+                     'id',
+                     'barcode',)
+    list_filter = ('user', 
+                   'workflow_step', 
+                   'created_at', 
+                   'updated_at', 
+                   'pub_year',)
+    list_display = ('id', 
+                    'item_title', 
+                    'enumcron', 
+                    'workflow_step', 
+                    'oclc', 
+                    'user', 
+                    'order_id', )
+    ordering = ('-due_date', 
+                '-updated_at', )
+    save_on_top = True
+
+class Digital_filesAdmin(admin.ModelAdmin):
+    fieldsets = (
+                 (None, {
+                    'fields': ('images_captured_count', ) }),
+                 ('Outputs File Paths', {
                     'fields': ('dpi', 
                                'bit_depth', 
                                'base_path', 
@@ -55,46 +92,14 @@ class ItemAdmin(admin.ModelAdmin):
                                'images_captured_regex', 
                                'images_master_regex', 
                                'images_presentation_regex', ), }),
-            ('Characteristics of Original', {  
-                    'fields': ('is_brittle', 
-                               'is_cataloged', 
-                               'is_paginated', 
-                               'has_binding', 
-                               'is_serial', 
-                               'is_resource_type', 
-                               'has_typeset_text', 
-                               'has_foldouts', ), }),
-            (None, {
-                  'fields': ( 'rejection_code', 
-                             'note', ) }),
-                 )
-    inlines = [Metadata_TermInline]
-    search_fields = ('title', 
-                     'oclc',
-                     'id',
-                     'barcode',)
-    list_filter = ('user', 
-                   'workflow_step', 
-                   'created_at', 
-                   'updated_at', 
-                   'pub_year',)
-    list_display = ('id', 
-                    'title', 
-                    'enumcron', 
-                    'workflow_step', 
-                    'oclc', 
-                    'user', 
-                    'batch_order', )
-    ordering = ('-due_date', 
-                '-updated_at', )
-    save_on_top = True
+                            )
 
-class Batch_OrderAdmin(admin.ModelAdmin):
+class OrderAdmin(admin.ModelAdmin):
     list_display = ('date_order_due', 
                     'id', 
-                    'description', 
-                    'date_order_created', 
-                    'rush', )
+                    'order_title', 
+                    'date_order_approved', 
+                    'is_rush', )
     save_on_top = True
 
 class Metadata_TermAdmin(admin.ModelAdmin):
@@ -106,9 +111,39 @@ class MetadataAdmin(admin.ModelAdmin):
                     'term',
                     'value', )
 
+class PersonAdmin(admin.ModelAdmin):
+    fields = ('person_last_name', 
+              'person_first_name',
+              'title', 
+              'address1', 
+              'address2', 
+              'city', 
+              'state', 
+              'zip', 
+              'phone', 
+              'email', )
+    list_display = ('person_last_name',
+                    'person_first_name', )
+    ordering = ('person_last_name',
+                'person_first_name', )
+
+class OrganizationAdmin(admin.ModelAdmin):
+    fields = ('organization_name',
+              'organization_short_name', 
+              'address1', 
+              'address2', 
+              'city', 
+              'state', 
+              'zip', 
+              'phone', 
+              'email', 
+              'main_contact' )
+    list_display = ('organization_short_name', 'organization_name', )
+
 admin.site.register(Collection) 
-admin.site.register(Contact)
-admin.site.register(Batch_Order, Batch_OrderAdmin)
+admin.site.register(Person, PersonAdmin)
+admin.site.register(Organization, OrganizationAdmin)
+admin.site.register(Order, OrderAdmin)
 admin.site.register(Error_Code)
 admin.site.register(Rejection_Code)
 admin.site.register(Record)

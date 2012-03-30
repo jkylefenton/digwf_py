@@ -11,14 +11,14 @@ class Migration(SchemaMigration):
         # Adding model 'Record'
         db.create_table('repo_checker_record', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('barcode', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=16, blank=True)),
+            ('barcode', self.gf('django.db.models.fields.CharField')(max_length=16, unique=True, null=True, db_index=True)),
             ('call_no_expanded', self.gf('django.db.models.fields.CharField')(max_length=19, blank=True)),
             ('no_circs', self.gf('django.db.models.fields.CharField')(max_length=1, blank=True)),
             ('item_type', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
             ('copy_num', self.gf('django.db.models.fields.CharField')(max_length=1, blank=True)),
             ('home_location', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
             ('current_location', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
-            ('library', self.gf('django.db.models.fields.CharField')(max_length=7, blank=True)),
+            ('library', self.gf('django.db.models.fields.CharField')(max_length=9, blank=True)),
             ('date_cataloged', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
             ('title_control', self.gf('django.db.models.fields.CharField')(max_length=14, blank=True)),
             ('ohohoh', self.gf('django.db.models.fields.CharField')(max_length=15, blank=True)),
@@ -42,6 +42,7 @@ class Migration(SchemaMigration):
             ('issn', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
             ('ht_rec_num', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
             ('ol_id', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
+            ('oclc_trimmed', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=11, null=True, blank=True)),
         ))
         db.send_create_signal('repo_checker', ['Record'])
 
@@ -112,7 +113,7 @@ class Migration(SchemaMigration):
         },
         'repo_checker.record': {
             'Meta': {'object_name': 'Record'},
-            'barcode': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '16', 'blank': 'True'}),
+            'barcode': ('django.db.models.fields.CharField', [], {'max_length': '16', 'unique': 'True', 'null': 'True', 'db_index': 'True'}),
             'call_no': ('django.db.models.fields.CharField', [], {'max_length': '14', 'blank': 'True'}),
             'call_no_expanded': ('django.db.models.fields.CharField', [], {'max_length': '19', 'blank': 'True'}),
             'copy_num': ('django.db.models.fields.CharField', [], {'max_length': '1', 'blank': 'True'}),
@@ -130,11 +131,12 @@ class Migration(SchemaMigration):
             'issn': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'item_type': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
             'lccn': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
-            'library': ('django.db.models.fields.CharField', [], {'max_length': '7', 'blank': 'True'}),
+            'library': ('django.db.models.fields.CharField', [], {'max_length': '9', 'blank': 'True'}),
             'local_note': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'meeting_name': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '100', 'blank': 'True'}),
             'no_circs': ('django.db.models.fields.CharField', [], {'max_length': '1', 'blank': 'True'}),
             'oclc': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
+            'oclc_trimmed': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '11', 'null': 'True', 'blank': 'True'}),
             'ohohoh': ('django.db.models.fields.CharField', [], {'max_length': '15', 'blank': 'True'}),
             'ol_id': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'personal_author': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'blank': 'True'}),

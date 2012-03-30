@@ -41,11 +41,9 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal('digwf', ['Workflow_Step'])
 
-        # Adding model 'Contact'
-        db.create_table('digwf_contact', (
+        # Adding model 'Agent'
+        db.create_table('digwf_agent', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('company', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
-            ('person', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
             ('address1', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
             ('address2', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
             ('city', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
@@ -53,25 +51,39 @@ class Migration(SchemaMigration):
             ('zip', self.gf('django.db.models.fields.IntegerField')(max_length=5, null=True, blank=True)),
             ('phone', self.gf('django.db.models.fields.IntegerField')(max_length=10, null=True, blank=True)),
             ('email', self.gf('django.db.models.fields.EmailField')(max_length=75, blank=True)),
-            ('contact_type', self.gf('django.db.models.fields.CharField')(max_length=25, blank=True)),
         ))
-        db.send_create_signal('digwf', ['Contact'])
+        db.send_create_signal('digwf', ['Agent'])
 
-        # Adding model 'Batch_Order'
-        db.create_table('digwf_batch_order', (
+        # Adding model 'Person'
+        db.create_table('digwf_person', (
+            ('agent_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['digwf.Agent'], unique=True, primary_key=True)),
+            ('person_last_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
+            ('person_first_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
+        ))
+        db.send_create_signal('digwf', ['Person'])
+
+        # Adding model 'Corporation'
+        db.create_table('digwf_corporation', (
+            ('agent_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['digwf.Agent'], unique=True, primary_key=True)),
+            ('corporate_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
+            ('main_contact', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Person'], null=True, blank=True)),
+        ))
+        db.send_create_signal('digwf', ['Corporation'])
+
+        # Adding model 'Order'
+        db.create_table('digwf_order', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('order_type', self.gf('django.db.models.fields.CharField')(max_length=25)),
-            ('customer_id', self.gf('django.db.models.fields.related.ForeignKey')(related_name='customer', to=orm['digwf.Contact'])),
-            ('delivery_id', self.gf('django.db.models.fields.related.ForeignKey')(related_name='delivery', to=orm['digwf.Contact'])),
-            ('description', self.gf('django.db.models.fields.CharField')(max_length=255)),
-            ('date_order_created', self.gf('django.db.models.fields.DateField')(auto_now_add=True, blank=True)),
+            ('customer_id', self.gf('django.db.models.fields.related.ForeignKey')(related_name='customer', to=orm['digwf.Agent'])),
+            ('order_title', self.gf('django.db.models.fields.CharField')(max_length=255)),
             ('date_order_due', self.gf('django.db.models.fields.DateField')()),
+            ('date_order_approved', self.gf('django.db.models.fields.DateField')(auto_now_add=True, blank=True)),
             ('date_order_completed', self.gf('django.db.models.fields.DateField')(null=True, blank=True)),
             ('date_originals_received', self.gf('django.db.models.fields.DateField')(null=True, blank=True)),
             ('date_originals_returned', self.gf('django.db.models.fields.DateField')(null=True, blank=True)),
             ('originals_received_by', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
             ('originals_returned_to', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
-            ('rush', self.gf('django.db.models.fields.BooleanField')(default=False)),
+            ('is_rush', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('delivery_method', self.gf('django.db.models.fields.CharField')(max_length=25, blank=True)),
             ('customer_notes', self.gf('django.db.models.fields.TextField')(blank=True)),
             ('processing_notes', self.gf('django.db.models.fields.TextField')(blank=True)),
@@ -84,7 +96,7 @@ class Migration(SchemaMigration):
             ('copyright_permission_terms', self.gf('django.db.models.fields.CharField')(max_length=255, blank=True)),
             ('copyright_end_user_rights', self.gf('django.db.models.fields.CharField')(max_length=255, blank=True)),
         ))
-        db.send_create_signal('digwf', ['Batch_Order'])
+        db.send_create_signal('digwf', ['Order'])
 
         # Adding model 'Rights'
         db.create_table('digwf_rights', (
@@ -114,8 +126,8 @@ class Migration(SchemaMigration):
         # Adding model 'Item'
         db.create_table('digwf_item', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('title', self.gf('django.db.models.fields.CharField')(max_length=200)),
-            ('collection', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Collection'], null=True, blank=True)),
+            ('item_title', self.gf('django.db.models.fields.CharField')(max_length=200)),
+            ('collection_id', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Collection'], null=True, blank=True)),
             ('oclc', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
             ('lccn', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
             ('isbn', self.gf('django.db.models.fields.CharField')(max_length=50, blank=True)),
@@ -125,32 +137,14 @@ class Migration(SchemaMigration):
             ('digital_masters_id', self.gf('django.db.models.fields.IntegerField')(max_length=5, blank=True)),
             ('other_id', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
             ('enumcron', self.gf('django.db.models.fields.CharField')(max_length=20, blank=True)),
-            ('base_path', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('pdf_regex', self.gf('django.db.models.fields.CharField')(default='Output/PDF/*.pdf', max_length=100, blank=True)),
-            ('ocr_regex', self.gf('django.db.models.fields.CharField')(default='Output/XML/*.xml', max_length=100, blank=True)),
-            ('txt_regex', self.gf('django.db.models.fields.CharField')(default='Output/OCR/*.txt', max_length=100, blank=True)),
-            ('pos_regex', self.gf('django.db.models.fields.CharField')(default='Output/OCR/*.pos', max_length=100, blank=True)),
-            ('mrc_regex', self.gf('django.db.models.fields.CharField')(default='*_MRC.xml', max_length=100, blank=True)),
-            ('jp2_regex', self.gf('django.db.models.fields.CharField')(default='Output/Images/JP2/*.jp2', max_length=100, blank=True)),
-            ('mets_regex', self.gf('django.db.models.fields.CharField')(default='Output/Metadata/*_METS.xml', max_length=100, blank=True)),
-            ('alto_regex', self.gf('django.db.models.fields.CharField')(default='Output/Metadata/ALTO/*_ALTO.xml', max_length=100, blank=True)),
-            ('pdfa_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('mods_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('dc_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('images_captured_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('images_master_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('images_presentation_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('images_captured_count', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
             ('foldout_count', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
-            ('has_foldouts', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('created_at', self.gf('django.db.models.fields.DateField')(auto_now_add=True, blank=True)),
             ('updated_at', self.gf('django.db.models.fields.DateField')(auto_now=True, blank=True)),
-            ('rush', self.gf('django.db.models.fields.BooleanField')(default=False)),
+            ('is_rush', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('notification_email', self.gf('django.db.models.fields.EmailField')(max_length=75, blank=True)),
             ('due_date', self.gf('django.db.models.fields.DateField')(null=True, blank=True)),
             ('is_brittle', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('is_digitized', self.gf('django.db.models.fields.BooleanField')(default=False)),
-            ('is_cataloged', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('is_paginated', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('has_binding', self.gf('django.db.models.fields.BooleanField')(default=False)),
             ('is_serial', self.gf('django.db.models.fields.BooleanField')(default=False)),
@@ -164,7 +158,7 @@ class Migration(SchemaMigration):
             ('note', self.gf('django.db.models.fields.TextField')(blank=True)),
             ('rejection_code', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Rejection_Code'], null=True, blank=True)),
             ('workflow_step', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Workflow_Step'])),
-            ('batch_order', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Batch_Order'])),
+            ('order_id', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Order'])),
             ('user', self.gf('django.db.models.fields.CharField')(max_length=15)),
             ('dpi', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
             ('time_spent', self.gf('django.db.models.fields.TimeField')(blank=True)),
@@ -172,6 +166,29 @@ class Migration(SchemaMigration):
             ('owner_originals', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
         ))
         db.send_create_signal('digwf', ['Item'])
+
+        # Adding model 'Digital_files'
+        db.create_table('digwf_digital_files', (
+            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('base_path', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('dc_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('ocr_regex', self.gf('django.db.models.fields.CharField')(default='Output/XML/*.xml', max_length=100, blank=True)),
+            ('pdf_regex', self.gf('django.db.models.fields.CharField')(default='Output/PDF/*.pdf', max_length=100, blank=True)),
+            ('pdfa_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('txt_regex', self.gf('django.db.models.fields.CharField')(default='Output/OCR/*.txt', max_length=100, blank=True)),
+            ('pos_regex', self.gf('django.db.models.fields.CharField')(default='Output/OCR/*.pos', max_length=100, blank=True)),
+            ('mrc_regex', self.gf('django.db.models.fields.CharField')(default='*_MRC.xml', max_length=100, blank=True)),
+            ('jp2_regex', self.gf('django.db.models.fields.CharField')(default='Output/Images/JP2/*.jp2', max_length=100, blank=True)),
+            ('mets_regex', self.gf('django.db.models.fields.CharField')(default='Output/Metadata/*_METS.xml', max_length=100, blank=True)),
+            ('alto_regex', self.gf('django.db.models.fields.CharField')(default='Output/Metadata/ALTO/*_ALTO.xml', max_length=100, blank=True)),
+            ('mods_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('images_raw_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('images_master_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('images_presentation_regex', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
+            ('images_captured_count', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
+            ('item_id', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['digwf.Item'])),
+        ))
+        db.send_create_signal('digwf', ['Digital_files'])
 
         # Adding model 'Metadata'
         db.create_table('digwf_metadata', (
@@ -205,11 +222,17 @@ class Migration(SchemaMigration):
         # Deleting model 'Workflow_Step'
         db.delete_table('digwf_workflow_step')
 
-        # Deleting model 'Contact'
-        db.delete_table('digwf_contact')
+        # Deleting model 'Agent'
+        db.delete_table('digwf_agent')
 
-        # Deleting model 'Batch_Order'
-        db.delete_table('digwf_batch_order')
+        # Deleting model 'Person'
+        db.delete_table('digwf_person')
+
+        # Deleting model 'Corporation'
+        db.delete_table('digwf_corporation')
+
+        # Deleting model 'Order'
+        db.delete_table('digwf_order')
 
         # Deleting model 'Rights'
         db.delete_table('digwf_rights')
@@ -223,6 +246,9 @@ class Migration(SchemaMigration):
         # Deleting model 'Item'
         db.delete_table('digwf_item')
 
+        # Deleting model 'Digital_files'
+        db.delete_table('digwf_digital_files')
+
         # Deleting model 'Metadata'
         db.delete_table('digwf_metadata')
 
@@ -231,32 +257,16 @@ class Migration(SchemaMigration):
 
 
     models = {
-        'digwf.batch_order': {
-            'Meta': {'ordering': "['-rush', '-date_order_due', '-id']", 'object_name': 'Batch_Order'},
-            'archive_surrogates': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
-            'copyright_end_user_rights': ('django.db.models.fields.CharField', [], {'max_length': '255', 'blank': 'True'}),
-            'copyright_owner': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
-            'copyright_permission_statement': ('django.db.models.fields.CharField', [], {'max_length': '255', 'blank': 'True'}),
-            'copyright_permission_terms': ('django.db.models.fields.CharField', [], {'max_length': '255', 'blank': 'True'}),
-            'customer_id': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'customer'", 'to': "orm['digwf.Contact']"}),
-            'customer_notes': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
-            'date_order_completed': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
-            'date_order_created': ('django.db.models.fields.DateField', [], {'auto_now_add': 'True', 'blank': 'True'}),
-            'date_order_due': ('django.db.models.fields.DateField', [], {}),
-            'date_originals_received': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
-            'date_originals_returned': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
-            'default_collection': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Collection']", 'null': 'True', 'blank': 'True'}),
-            'delivery_id': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'delivery'", 'to': "orm['digwf.Contact']"}),
-            'delivery_method': ('django.db.models.fields.CharField', [], {'max_length': '25', 'blank': 'True'}),
-            'description': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
+        'digwf.agent': {
+            'Meta': {'object_name': 'Agent'},
+            'address1': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
+            'address2': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
+            'city': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
+            'email': ('django.db.models.fields.EmailField', [], {'max_length': '75', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'order_type': ('django.db.models.fields.CharField', [], {'max_length': '25'}),
-            'originals_received_by': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
-            'originals_returned_to': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
-            'owner_originals': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
-            'processing_notes': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
-            'release_on_file': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
-            'rush': ('django.db.models.fields.BooleanField', [], {'default': 'False'})
+            'phone': ('django.db.models.fields.IntegerField', [], {'max_length': '10', 'null': 'True', 'blank': 'True'}),
+            'state': ('django.db.models.fields.CharField', [], {'max_length': '2', 'blank': 'True'}),
+            'zip': ('django.db.models.fields.IntegerField', [], {'max_length': '5', 'null': 'True', 'blank': 'True'})
         },
         'digwf.collection': {
             'Meta': {'ordering': "['type', 'coll_id']", 'object_name': 'Collection'},
@@ -266,19 +276,32 @@ class Migration(SchemaMigration):
             'type': ('django.db.models.fields.CharField', [], {'max_length': '30'}),
             'url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'})
         },
-        'digwf.contact': {
-            'Meta': {'ordering': "['company', 'person']", 'object_name': 'Contact'},
-            'address1': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
-            'address2': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
-            'city': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
-            'company': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
-            'contact_type': ('django.db.models.fields.CharField', [], {'max_length': '25', 'blank': 'True'}),
-            'email': ('django.db.models.fields.EmailField', [], {'max_length': '75', 'blank': 'True'}),
+        'digwf.corporation': {
+            'Meta': {'object_name': 'Corporation', '_ormbases': ['digwf.Agent']},
+            'agent_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['digwf.Agent']", 'unique': 'True', 'primary_key': 'True'}),
+            'corporate_name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'main_contact': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Person']", 'null': 'True', 'blank': 'True'})
+        },
+        'digwf.digital_files': {
+            'Meta': {'object_name': 'Digital_files'},
+            'alto_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/Metadata/ALTO/*_ALTO.xml'", 'max_length': '100', 'blank': 'True'}),
+            'base_path': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'dc_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'person': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
-            'phone': ('django.db.models.fields.IntegerField', [], {'max_length': '10', 'null': 'True', 'blank': 'True'}),
-            'state': ('django.db.models.fields.CharField', [], {'max_length': '2', 'blank': 'True'}),
-            'zip': ('django.db.models.fields.IntegerField', [], {'max_length': '5', 'null': 'True', 'blank': 'True'})
+            'images_captured_count': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
+            'images_master_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'images_presentation_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'images_raw_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'item_id': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Item']"}),
+            'jp2_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/Images/JP2/*.jp2'", 'max_length': '100', 'blank': 'True'}),
+            'mets_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/Metadata/*_METS.xml'", 'max_length': '100', 'blank': 'True'}),
+            'mods_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'mrc_regex': ('django.db.models.fields.CharField', [], {'default': "'*_MRC.xml'", 'max_length': '100', 'blank': 'True'}),
+            'ocr_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/XML/*.xml'", 'max_length': '100', 'blank': 'True'}),
+            'pdf_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/PDF/*.pdf'", 'max_length': '100', 'blank': 'True'}),
+            'pdfa_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'pos_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/OCR/*.pos'", 'max_length': '100', 'blank': 'True'}),
+            'txt_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/OCR/*.txt'", 'max_length': '100', 'blank': 'True'})
         },
         'digwf.error_code': {
             'Meta': {'object_name': 'Error_Code'},
@@ -287,62 +310,44 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'})
         },
         'digwf.item': {
-            'Meta': {'ordering': "['title']", 'object_name': 'Item'},
-            'alto_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/Metadata/ALTO/*_ALTO.xml'", 'max_length': '100', 'blank': 'True'}),
+            'Meta': {'ordering': "['item_title']", 'object_name': 'Item'},
             'barcode': ('django.db.models.fields.CharField', [], {'max_length': '20', 'blank': 'True'}),
-            'base_path': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
-            'batch_order': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Batch_Order']"}),
             'bit_depth': ('django.db.models.fields.CharField', [], {'default': "'8'", 'max_length': '2'}),
-            'collection': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Collection']", 'null': 'True', 'blank': 'True'}),
+            'collection_id': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Collection']", 'null': 'True', 'blank': 'True'}),
             'created_at': ('django.db.models.fields.DateField', [], {'auto_now_add': 'True', 'blank': 'True'}),
-            'dc_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'digital_masters_id': ('django.db.models.fields.IntegerField', [], {'max_length': '5', 'blank': 'True'}),
             'dpi': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
             'due_date': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
             'enumcron': ('django.db.models.fields.CharField', [], {'max_length': '20', 'blank': 'True'}),
             'foldout_count': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
             'has_binding': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
-            'has_foldouts': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'has_rights': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Rights']"}),
             'has_typeset_text': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'images_captured_count': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
-            'images_captured_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
-            'images_master_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
-            'images_presentation_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'is_brittle': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
-            'is_cataloged': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'is_digitized': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'is_paginated': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'is_resource_type': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Resource_Type']"}),
+            'is_rush': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'is_serial': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'isbn': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
             'issn': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
-            'jp2_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/Images/JP2/*.jp2'", 'max_length': '100', 'blank': 'True'}),
+            'item_title': ('django.db.models.fields.CharField', [], {'max_length': '200'}),
             'lccn': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
             'metadata': ('django.db.models.fields.related.ManyToManyField', [], {'to': "orm['digwf.Metadata_Term']", 'through': "orm['digwf.Metadata']", 'symmetrical': 'False'}),
-            'mets_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/Metadata/*_METS.xml'", 'max_length': '100', 'blank': 'True'}),
-            'mods_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
-            'mrc_regex': ('django.db.models.fields.CharField', [], {'default': "'*_MRC.xml'", 'max_length': '100', 'blank': 'True'}),
             'note': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
             'notification_email': ('django.db.models.fields.EmailField', [], {'max_length': '75', 'blank': 'True'}),
             'oclc': ('django.db.models.fields.CharField', [], {'max_length': '50', 'blank': 'True'}),
-            'ocr_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/XML/*.xml'", 'max_length': '100', 'blank': 'True'}),
+            'order_id': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Order']"}),
             'other_id': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
             'owner_originals': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
-            'pdf_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/PDF/*.pdf'", 'max_length': '100', 'blank': 'True'}),
-            'pdfa_regex': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'pid': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
-            'pos_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/OCR/*.pos'", 'max_length': '100', 'blank': 'True'}),
             'pub_place': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
             'pub_state': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Publication_State']"}),
             'pub_year': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
             'rejection_code': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Rejection_Code']", 'null': 'True', 'blank': 'True'}),
-            'rush': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'time_spent': ('django.db.models.fields.TimeField', [], {'blank': 'True'}),
-            'title': ('django.db.models.fields.CharField', [], {'max_length': '200'}),
             'to_archive': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
-            'txt_regex': ('django.db.models.fields.CharField', [], {'default': "'Output/OCR/*.txt'", 'max_length': '100', 'blank': 'True'}),
             'updated_at': ('django.db.models.fields.DateField', [], {'auto_now': 'True', 'blank': 'True'}),
             'user': ('django.db.models.fields.CharField', [], {'max_length': '15'}),
             'workflow_step': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Workflow_Step']"})
@@ -359,6 +364,38 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'label': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '255'})
+        },
+        'digwf.order': {
+            'Meta': {'ordering': "['-is_rush', '-date_order_due', '-id']", 'object_name': 'Order'},
+            'archive_surrogates': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
+            'copyright_end_user_rights': ('django.db.models.fields.CharField', [], {'max_length': '255', 'blank': 'True'}),
+            'copyright_owner': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'copyright_permission_statement': ('django.db.models.fields.CharField', [], {'max_length': '255', 'blank': 'True'}),
+            'copyright_permission_terms': ('django.db.models.fields.CharField', [], {'max_length': '255', 'blank': 'True'}),
+            'customer_id': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'customer'", 'to': "orm['digwf.Agent']"}),
+            'customer_notes': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
+            'date_order_approved': ('django.db.models.fields.DateField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'date_order_completed': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
+            'date_order_due': ('django.db.models.fields.DateField', [], {}),
+            'date_originals_received': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
+            'date_originals_returned': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
+            'default_collection': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['digwf.Collection']", 'null': 'True', 'blank': 'True'}),
+            'delivery_method': ('django.db.models.fields.CharField', [], {'max_length': '25', 'blank': 'True'}),
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'is_rush': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'order_title': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
+            'order_type': ('django.db.models.fields.CharField', [], {'max_length': '25'}),
+            'originals_received_by': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
+            'originals_returned_to': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
+            'owner_originals': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'processing_notes': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
+            'release_on_file': ('django.db.models.fields.BooleanField', [], {'default': 'False'})
+        },
+        'digwf.person': {
+            'Meta': {'object_name': 'Person', '_ormbases': ['digwf.Agent']},
+            'agent_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['digwf.Agent']", 'unique': 'True', 'primary_key': 'True'}),
+            'person_first_name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'person_last_name': ('django.db.models.fields.CharField', [], {'max_length': '50'})
         },
         'digwf.publication_state': {
             'Meta': {'object_name': 'Publication_State'},

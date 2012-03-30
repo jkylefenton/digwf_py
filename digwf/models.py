@@ -1,29 +1,21 @@
 from django.db import models
+from django.contrib.localflavor.us.models import PhoneNumberField, USStateField
 
 
 class Collection(models.Model):
     
-    COLLECTION_TYPE_CHOICES = (
-                               (u'Emory Digital Editions', u'Emory Digital Editions'),
-                               (u'MARBL MSS #', u'MARBL MSS #'),
-                               (u'EUA Series #', u'EUA Series #'),
-                               (u'Pitts MSS #', u'Pitts MSS #'),
-                               (u'Pitts RG #', u'Pitts RG #'),
-                               (u'Other', u'Other'),
-                               )  
-
-    type = models.CharField(max_length=30, choices=COLLECTION_TYPE_CHOICES)
-    coll_id = models.CharField(max_length=15)
-    description = models.CharField(max_length=255)
-    url = models.URLField(blank=True)
+    collection_short_name = models.CharField(max_length=15, blank=True)
+    collection_description = models.CharField(max_length=255, blank=True, null=True)
+    collection_url = models.URLField(blank=True, null=True)
+    parent_collection = models.ForeignKey('self', blank=True, null=True)
 
     def __unicode__(self):
-        return u'%s : %s : %s'% (self.type, self.coll_id, self.description)
+        return u'%s : %s'% (self.collection_short_name, self.collection_description)
     
     class Meta:
-        ordering = ['type', 'coll_id']
+        ordering = ['collection_short_name', 'collection_description']
 
-class Publication_State(models.Model):
+class Publication_State(models.Model): 
     ''' List showing whether an item is published, or not, or is somewhere in between. '''
     
     status = models.CharField(max_length=15)
@@ -50,32 +42,36 @@ class Workflow_Step(models.Model):
     def __unicode__(self):
         return self.code
 
-class Contact(models.Model):
-    
-    CONTACT_TYPE_CHOICES = (
-                            (u'customer', u'Customer'),
-                            (u'outsourcer', u'Outsourcer'),
-                            )
-    company = models.CharField(max_length=50, blank=True)
-    person = models.CharField(max_length=50, blank=True)
+class Agent(models.Model):
+
     address1 = models.CharField(max_length=50, blank=True)
     address2 = models.CharField(max_length=50, blank=True)
     city = models.CharField(max_length=30, blank=True)
-    state = models.CharField(max_length=2, blank=True)
+    state = USStateField(max_length=2, blank=True)
     zip = models.IntegerField('5 digit ZIP', max_length=5, null=True, blank=True)
-    phone = models.IntegerField('Phone, numbers only', max_length=10, null=True, blank=True)
+    phone = PhoneNumberField('Phone', max_length=10, null=True, blank=True)
     email = models.EmailField(max_length=75, blank=True)
-    contact_type = models.CharField(max_length=25, blank=True, choices=CONTACT_TYPE_CHOICES)  # Customer, Delivery, Vendor, etc.
+#    agent_type = models.CharField(max_length=25, blank=True, choices=AGENT_TYPE_CHOICES)  # Customer, Delivery, Vendor, etc.
     # note = models.TextField(blank=True)
     
-    def __unicode__(self):
-        return u'%s : %s' % (self.company, self.person)
+
+class Person(Agent):
+    person_last_name = models.CharField(max_length=50)
+    person_first_name = models.CharField(max_length=50)
+    title = models.CharField(max_length=50, null=True, blank=True)
     
-    class Meta:
-        ordering = ['company', 'person']
+    def __unicode__(self):
+        return u'%s, %s' % (self.person_last_name, self.person_first_name)   
 
-class Batch_Order(models.Model):
+class Organization(Agent):
+    organization_name = models.CharField(max_length=50)
+    organization_short_name = models.CharField(max_length=15, null=True, blank=True)
+    main_contact = models.ForeignKey(Person, blank=True, null=True)
 
+class Order(models.Model):
+    '''Represents an approved request to digitize.  Each order has one or more associated Items.  Each order has exactly one Customer. An Order that has not yet been approved is a Request'''
+
+    # should each order type have an optional association with an Agent, so that e.g. we can email MARBL when we're done with a patron order?
     ORDER_TYPE_CHOICES = (
                           (u'marbl_patron', u'MARBL Researcher/Patron'),
                           (u'library_exhibit', u'Library Exhibit'),
@@ -112,18 +108,27 @@ class Batch_Order(models.Model):
                                 (u'non-emory', u'Customer not affiliated with Emory'),
                                 )
     order_type = models.CharField(max_length=25, choices=ORDER_TYPE_CHOICES)
-    customer_id = models.ForeignKey(Contact, related_name = 'customer')
-    delivery_id = models.ForeignKey(Contact, related_name = 'delivery')
+    # customer_id = models.ForeignKey(Agent, related_name = 'customer')
+    #    delivery_id = models.ForeignKey(Agent, related_name = 'delivery')
+    # billing_id ???
+    # requester_id ???
     #    outsourcer_id = models.ForeignKey(Contact, related_name = 'outsourcer', blank = True, null = True, default = None)
-    description = models.CharField(max_length=255)
-    date_order_created = models.DateField('Current Date', auto_now_add=True)
-    date_order_due = models.DateField('Date Order Due')   # default is 10 business days from submission, can be modified (by DDC staff?)
+    order_title = models.CharField(max_length=255)
+    date_order_due = models.DateField('Date Order Due', blank = True, null = True)   # default is 10 business days from submission, can be modified (by DDC staff?)
+    
+    # the following are really workflow steps that need to be logged in another table
+    # others used in Hydraulics include deferred, cancelled, permissions_given, started, fee_estimate_sent, customer_notified, patron_deliverables_complete, finalization_begun
+    date_order_approved = models.DateField('Current Date', auto_now_add=True)
     date_order_completed = models.DateField('Date Order Completed', blank = True, null = True) # should be within due date
     date_originals_received = models.DateField('Date Originals Received', blank = True, null = True) #
     date_originals_returned = models.DateField('Date Originals Returned', blank = True, null = True) # 
+    
+    # fee_estimated
+    # fee_actual
+    
     originals_received_by = models.CharField(max_length=30, blank=True)  # ideally this should be user id
     originals_returned_to = models.CharField(max_length=30, blank=True)  # ideally this should be user id   
-    rush = models.BooleanField('Rush Order')    # if marked rush, will do ASAP as a top priority (extra charge applies per item?)
+    is_rush = models.BooleanField('Rush Order')    # if marked rush, will do ASAP as a top priority (extra charge applies per item?)
     delivery_method = models.CharField(max_length=25, blank=True, choices=DELIVERY_METHOD_CHOICES)
     customer_notes = models.TextField(blank=True) # notes from customer, special instructions, etc.
     processing_notes = models.TextField(blank=True)  # internal notes for digitization or other processing
@@ -141,11 +146,25 @@ class Batch_Order(models.Model):
     copyright_permission_terms = models.CharField(max_length=255, blank=True)  # Typically "Emory may digitize, ..."
     copyright_end_user_rights = models.CharField(max_length=255, blank=True) # Typically "Further reproduction or duplication is ..."
 
+    # REQUEST RELATED FIELDS (build in ability to weigh criteria via a point system)
+    # request_form_upload = models.FileField(upload_to=requests) # Request Form Upload
+    # Rights (drop-down)
+    # Value and Utility (multi-choice)
+    # Duplication (drop-down)
+    # Enhancement of intellectual access (multi-choice)
+    # Demand (multi-choice)
+    # Collaborative across collections (multi-choice)
+    # Preservation aspects (multi-choice)
+    # Intellectual Access / Metadata (multi-choice)
+    
     def __unicode__(self):
-        return self.description
+        return self.order_title
 
     class Meta:
-        ordering = ['-rush', '-date_order_due', '-id']
+        ordering = ['-is_rush', '-date_order_due', '-id']
+
+
+
 
 
 class Rights(models.Model):
@@ -162,7 +181,6 @@ class Rights(models.Model):
 class Resource_Type(models.Model):
     type = models.CharField(max_length=25)
     description = models.TextField(blank=True)
-    broad_type = models.CharField(max_length=25)
 
     def __unicode__(self):
         return u'%s : %s' % (self.type, self.description)    
@@ -173,6 +191,7 @@ class Resource_Type(models.Model):
 class Metadata_Term(models.Model):
     label = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
+    documentation_url = models.URLField(max_length=2083, blank=True, null=True) 
 
     class Meta:
         ordering = ('label', )
@@ -180,7 +199,8 @@ class Metadata_Term(models.Model):
     def __unicode__(self):
         return self.label
 
-class Item(models.Model):    
+class Item(models.Model):
+    '''Represents a physical item (in the sense of a FRBR item).  One or more Items are in an Order.  An Item has one or more Digital Files.  An Item can be Pulled, Received, Sent for Repair, Returned, Outsourced, Rejected, or Digitally Captured'''
     
     PUB_PLACE_CHOICES = (
         (u'US', u'United States'),
@@ -208,44 +228,43 @@ class Item(models.Model):
         (u'customer', u'Customer'),
     )    
     
-    title = models.CharField(max_length=200)
-    collection = models.ForeignKey(Collection, blank=True, null=True)
-    oclc = models.CharField('OCLC Control Key', max_length=50, blank=True)  # OCLC control key, normalized to just digits
-    lccn = models.CharField(max_length=50, blank=True)    # Library of Congress Control Number, normalized to LC standards  http://www.loc.gov/marc/lccn-namespace.html#syntax
-    isbn = models.CharField('ISBN', max_length=50, blank=True)    # International Standard Book Number
-    issn = models.CharField('ISSN', max_length=50, blank=True)    # International Standard Serial Number
-    barcode = models.CharField('Emory Barcode', max_length=20, blank=True) # local barcode attached to the physical copy of a digitized item
-    pid = models.CharField('Emory PID', max_length=10, blank=True)       # PID assigned to item
-    digital_masters_id = models.IntegerField('Digital Masters ID', max_length=5, blank=True)
-    other_id = models.CharField('Other identifier', max_length=30, blank=True)
+    
+    def is_cataloged(self):
+        '''Returns True if an item is cataloged'''
+        if self.oclc is None:
+            return False
+        elif self.barcode is None:
+            return False
+        return True
+    
+    def has_foldouts(self):
+        '''Returns True if an item has foldouts (or is a folded item)'''
+        if self.foldout_count is None:
+            return False
+        return True
+
+    item_title = models.CharField(max_length=200)
+    collection_id = models.ForeignKey(Collection, blank=True, null=True)
+    
+    oclc = models.CharField('OCLC Control Key', max_length=50, blank=True, null=True)  # OCLC control key, normalized to just digits
+    lccn = models.CharField(max_length=50, blank=True, null=True)    # Library of Congress Control Number, normalized to LC standards  http://www.loc.gov/marc/lccn-namespace.html#syntax
+    isbn = models.CharField('ISBN', max_length=50, blank=True, null=True)    # International Standard Book Number
+    issn = models.CharField('ISSN', max_length=50, blank=True, null=True)    # International Standard Serial Number
+    barcode = models.CharField('Emory Barcode', max_length=20, blank=True, null=True) # local barcode attached to the physical copy of a digitized item
+    pid = models.CharField('Emory PID', max_length=10, blank=True, null=True)       # PID assigned to item
+    digital_masters_id = models.IntegerField('Digital Masters ID', max_length=5, blank=True, null=True)
+    other_id = models.CharField('Other identifier', max_length=30, blank=True, null=True)
+    
     enumcron = models.CharField('Volume/Part', max_length=20, blank=True)   # volume or part designation for this item
-    base_path = models.CharField(max_length=100, blank=True)   # base directory path for files output from digitization of item
-    #   look at FilePathField field type for these regex's, has path, match and recursive arguments
-    pdf_regex = models.CharField(max_length=100, blank=True, default='Output/PDF/*.pdf')  # regex relative to base path, location of Kirtas PDF
-    ocr_regex = models.CharField(max_length=100, blank=True, default='Output/XML/*.xml')  # regex relative to base path, location of OCR .xml
-    txt_regex = models.CharField(max_length=100, blank=True, default='Output/OCR/*.txt')  # regex relative to base path, location of .txt files
-    pos_regex = models.CharField(max_length=100, blank=True, default='Output/OCR/*.pos')  # regex relative to base path, location of .pos files (word position)
-    mrc_regex = models.CharField(max_length=100, blank=True, default='*_MRC.xml')  # regex relative to base path, location of MARCXML file
-    jp2_regex = models.CharField(max_length=100, blank=True, default='Output/Images/JP2/*.jp2')    # regex relative to base path, location of JP2 files
-    mets_regex = models.CharField(max_length=100, blank=True, default='Output/Metadata/*_METS.xml')   # regex relative to base path, location of METS file
-    alto_regex = models.CharField(max_length=100, blank=True, default='Output/Metadata/ALTO/*_ALTO.xml') 
-    pdfa_regex = models.CharField(max_length=100, blank=True)   # regex relative to base path, location of PDFA file
-    mods_regex = models.CharField(max_length=100, blank=True)   # regex relative to base path, location of MODS file
-    dc_regex = models.CharField(max_length=100, blank=True)     # regex relative to base path, location of DC file
-    images_captured_regex = models.CharField(max_length=100, blank=True)  # regex relative to base path, location of camera or scanner images
-    images_master_regex = models.CharField(max_length=100, blank=True)  # regex relative to base path, location of preservation master images
-    images_presentation_regex = models.CharField(max_length=100, blank=True)  # regex relative to base path, location of presentation quality images
-    images_captured_count = models.IntegerField('# of Images Captured', blank=True, null=True) # count of images directly from the camera/scanner
+    
     foldout_count = models.IntegerField('# of Foldouts', blank=True, null=True)  # count of foldouts in a bound item (for chargeback purposes)
-    has_foldouts = models.BooleanField('Book item contains foldouts', default=False)
     created_at = models.DateField(auto_now_add=True)  # date item record created
     updated_at = models.DateField(auto_now=True)  # date item record last updated
-    rush = models.BooleanField('Rush Process This Item') # whether this is a prioritized rush item
+    is_rush = models.BooleanField('Rush Process This Item') # whether this is a prioritized rush item
     notification_email = models.EmailField(blank=True)  # email contact, to notify when item is avaiable online
     due_date = models.DateField(blank=True, null=True)   # due date for item 
     is_brittle = models.BooleanField('Item brittle but digitizeable')    # indicates whether this is a brittle book that can be destroyed while digitized, then withdrawn; default value is FALSE
     is_digitized = models.BooleanField('Already Digitized Elsewhere eg HathiTrust')   # whether item has already been digitized
-    is_cataloged = models.BooleanField('Item is Cataloged')     # whether item is cataloged or not 
     is_paginated = models.BooleanField('Item is Paginated')   # whether item is paginated or comprises an ordered set of parts
     has_binding = models.BooleanField('Item has Binding')   # whether item has a binding (is a codex)
     is_serial = models.BooleanField('Item is a Serial')   # whether item is a serial (destination might be an ejournals web front end)
@@ -259,8 +278,8 @@ class Item(models.Model):
     has_typeset_text = models.BooleanField()    # if there is typset text, then we can ocr the item
     note = models.TextField('Processing Notes', blank=True)    # any notes pertaining to the item being digitized
     rejection_code = models.ForeignKey(Rejection_Code, blank=True, null=True)
-    workflow_step = models.ForeignKey(Workflow_Step)
-    batch_order = models.ForeignKey(Batch_Order)
+    workflow_step = models.ForeignKey(Workflow_Step, null=True)
+    order_id = models.ForeignKey(Order)
     user = models.CharField('Staff User', max_length=15, choices = USER_CHOICES)
     dpi = models.IntegerField('DPI needed by customer', blank=True, null=True) # dpi field, so that we can go non-standard e.g. 1200 dpi for Schatten, default is 400 dpi (at actual size)
     time_spent = models.TimeField(blank=True)  # manually entered hh:mm format, may hook into a timer widget later       
@@ -272,10 +291,38 @@ class Item(models.Model):
     # outsourced = models.BooleanField()  # whether this item (batch) is/was being outsourced for digitization
     
     def __unicode__(self):
-        return self.title
+        return self.item_title
     
     class Meta:
-        ordering = ['title']
+        ordering = ['item_title']
+
+
+class Digital_files(models.Model):
+    # other file types might include TEI, ONIX, OAI-ORE, anything else?
+    base_path = models.CharField(max_length=100, blank=True)   # base directory path for files output from digitization of item
+    #   look at FilePathField field type for these regex's, has path, match and recursive arguments
+    dc_regex = models.CharField(max_length=100, blank=True)     # regex relative to base path, location of DC file
+    ocr_regex = models.CharField(max_length=100, blank=True, default='Output/XML/*.xml')  # regex relative to base path, location of OCR .xml
+    pdf_regex = models.CharField(max_length=100, blank=True, default='Output/PDF/*.pdf')  # regex relative to base path, location of Kirtas PDF
+    pdfa_regex = models.CharField(max_length=100, blank=True)   # regex relative to base path, location of PDFA file
+    txt_regex = models.CharField(max_length=100, blank=True, default='Output/OCR/*.txt')  # regex relative to base path, location of .txt files
+    pos_regex = models.CharField(max_length=100, blank=True, default='Output/OCR/*.pos')  # regex relative to base path, location of .pos files (word position)
+    mrc_regex = models.CharField(max_length=100, blank=True, default='*_MRC.xml')  # regex relative to base path, location of MARCXML file
+    jp2_regex = models.CharField(max_length=100, blank=True, default='Output/Images/JP2/*.jp2')    # regex relative to base path, location of JP2 files
+    mets_regex = models.CharField(max_length=100, blank=True, default='Output/Metadata/*_METS.xml')   # regex relative to base path, location of METS file
+    alto_regex = models.CharField(max_length=100, blank=True, default='Output/Metadata/ALTO/*_ALTO.xml') 
+    mods_regex = models.CharField(max_length=100, blank=True)   # regex relative to base path, location of MODS file
+    images_raw_regex = models.CharField(max_length=100, blank=True)  # regex relative to base path, location of camera or scanner images
+    images_master_regex = models.CharField(max_length=100, blank=True)  # regex relative to base path, location of preservation master images
+    images_presentation_regex = models.CharField(max_length=100, blank=True)  # regex relative to base path, location of presentation quality images
+    images_captured_count = models.IntegerField('# of Images Captured', blank=True, null=True) # count of images directly from the camera/scanner
+    item_id = models.ForeignKey(Item)
+    
+    class Meta:
+        verbose_name_plural = "Digital_files"
+    
+    def __unicode__(self):
+        return self.title
 
 class Metadata(models.Model):
     item = models.ForeignKey(Item, related_name='for_item')
