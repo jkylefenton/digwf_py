@@ -1,0 +1,167 @@
+[
+  {
+    "pk": 3, 
+    "model": "workflows.workflow", 
+    "fields": {
+      "initial_state": 14, 
+      "name": "LSDI"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [
+        8
+      ], 
+      "name": "Approved Order Request", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [], 
+      "name": "Feasibility Cleared for Order Request", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [], 
+      "name": "Fulfilled Order", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [], 
+      "name": "Itemized Order", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [
+        5
+      ], 
+      "name": "Rejected Order/Proposal", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [], 
+      "name": "Rights Cleared for Order Request", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [
+        5
+      ], 
+      "name": "Submitted Order Request", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "workflows.state", 
+    "fields": {
+      "transitions": [
+        5
+      ], 
+      "name": "Tabled Order Request", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 13, 
+      "name": "Table the Order Request", 
+      "condition": "", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 10, 
+      "name": "Clear the Feasibility for Order Request", 
+      "condition": "", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 15, 
+      "name": "Clear the Rights for Order Request", 
+      "condition": "", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 8, 
+      "name": "Approve the Order Request", 
+      "condition": "only if passes rights, feasibility and value OKs", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 12, 
+      "name": "Reject the Order Request", 
+      "condition": "", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 16, 
+      "name": "Fulfill the Order", 
+      "condition": "", 
+      "workflow": 3
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "workflows.transition", 
+    "fields": {
+      "permission": 2, 
+      "destination": 11, 
+      "name": "Itemize the Order", 
+      "condition": "a pull list must be uploaded, or 1+ items created", 
+      "workflow": 3
+    }
+  }
+]

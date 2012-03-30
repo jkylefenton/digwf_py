@@ -1,0 +1,56 @@
+[
+  {
+    "pk": 2, 
+    "model": "permissions.permission", 
+    "fields": {
+      "content_types": [
+        37, 
+        34
+      ], 
+      "codename": "EditMetadata", 
+      "name": "Edit Metadata"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "permissions.role", 
+    "fields": {
+      "name": "Digitization Manager"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "permissions.role", 
+    "fields": {
+      "name": "Digitization Team"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "permissions.role", 
+    "fields": {
+      "name": "Metadata Editor"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "permissions.role", 
+    "fields": {
+      "name": "Preservation Office Member"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "permissions.role", 
+    "fields": {
+      "name": "Selection Committee"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "permissions.role", 
+    "fields": {
+      "name": "Stacks (manages Items)"
+    }
+  }
+]
