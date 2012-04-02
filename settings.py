@@ -45,6 +45,14 @@ USE_I18N = True
 # calendars according to the current locale
 USE_L10N = True
 
+# Additional directories for fixtures
+FIXTURE_DIRS = (
+                'os.path.join(PROJECT_DIR, "digwf/fixtures")', 
+                'os.path.join(PROJECT_DIR, "external/django-modules/workflows/fixtures")', 
+                'os.path.join(PROJECT_DIR, "external/django-modules/permissions/fixtures")', 
+                'os.path.join(PROJECT_DIR, "external/django-modules/auth/fixtures")', 
+                )
+
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = 'os.path.join(PROJECT_DIR, "media")'
