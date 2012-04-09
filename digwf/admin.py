@@ -6,31 +6,31 @@ class Metadata_TermInline(admin.TabularInline):
     model = Metadata
     extra = 2
 
+class ItemInline(admin.TabularInline):
+    model = OrderItem
+    extra = 2
+
+class ItemIdentifierInline(admin.TabularInline):
+    model = ItemIdentifier
+    extra = 2
+
+class DigitalComponentInline(admin.TabularInline):
+    model = DigitalComponent
+    extra = 2
+
 class ItemAdmin(admin.ModelAdmin):
     fieldsets = (
             (None, {
                     'fields': ('time_spent', 
-                               'user', 
-                               'item_title', 
+                               'title', 
                                'collection_id', 
-                               'enumcron', 
-                               'order_id', 
-                               'workflow_step', 
+                               'enumcron',
                                'foldout_count', 
                                'is_rush', 
                                'notification_email', 
                                'due_date', 
-                               'is_digitized', 
+                               'is_already_digitized', 
                                'to_archive', ), }),
-            ('Volume Identifiers', {
-                    'fields': ('pid', 
-                               'barcode', 
-                               'oclc', 
-                               'lccn', 
-                               'isbn', 
-                               'issn', 
-                               'digital_masters_id', 
-                               'other_id', ), }),
             ('Rights Information', {
                   'fields': ('has_rights', 
                              'pub_state', 
@@ -49,28 +49,22 @@ class ItemAdmin(admin.ModelAdmin):
                   'fields': ( 'rejection_code', 
                              'note', ) }),
                  )
-    inlines = [Metadata_TermInline]
-    search_fields = ('item_title', 
-                     'oclc',
-                     'id',
-                     'barcode',)
-    list_filter = ('user', 
-                   'workflow_step', 
-                   'created_at', 
+    inlines = [ 
+               Metadata_TermInline,
+               ItemIdentifierInline 
+               ]
+    search_fields = ('title',
+                     'id')
+    list_filter = ('created_at', 
                    'updated_at', 
                    'pub_year',)
-    list_display = ('id', 
-                    'item_title', 
-                    'enumcron', 
-                    'workflow_step', 
-                    'oclc', 
-                    'user', 
-                    'order_id', )
+    list_display = ('title', 
+                    'enumcron')
     ordering = ('-due_date', 
                 '-updated_at', )
     save_on_top = True
 
-class Digital_filesAdmin(admin.ModelAdmin):
+class DigitalItemAdmin(admin.ModelAdmin):
     fieldsets = (
                  (None, {
                     'fields': ('images_captured_count', ) }),
@@ -78,21 +72,12 @@ class Digital_filesAdmin(admin.ModelAdmin):
                     'fields': ('dpi', 
                                'bit_depth', 
                                'base_path', 
-                               'pdf_regex', 
-                               'ocr_regex', 
-                               'txt_regex', 
-                               'pos_regex', 
-                               'mrc_regex', 
-                               'jp2_regex', 
-                               'mets_regex', 
-                               'alto_regex', 
-                               'pdfa_regex', 
-                               'mods_regex', 
-                               'dc_regex', 
-                               'images_captured_regex', 
-                               'images_master_regex', 
-                               'images_presentation_regex', ), }),
+                                ), }),
                             )
+
+    inlines = [ 
+               DigitalComponentInline 
+               ]
 
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('date_order_due', 
@@ -102,6 +87,8 @@ class OrderAdmin(admin.ModelAdmin):
                     'is_rush', )
     save_on_top = True
 
+    inlines = [ItemInline]
+
 class Metadata_TermAdmin(admin.ModelAdmin):
     list_display = ('label', 
                     'name', )
@@ -109,6 +96,15 @@ class Metadata_TermAdmin(admin.ModelAdmin):
 class MetadataAdmin(admin.ModelAdmin):
     list_display = ('item', 
                     'term',
+                    'value', )
+
+class ItemIdentifierTypeAdmin(admin.ModelAdmin):
+    list_display = ('label', 
+                    'name', )
+
+class ItemIdentifierAdmin(admin.ModelAdmin):
+    list_display = ('item', 
+                    'type',
                     'value', )
 
 class PersonAdmin(admin.ModelAdmin):
@@ -144,14 +140,19 @@ admin.site.register(Collection)
 admin.site.register(Person, PersonAdmin)
 admin.site.register(Organization, OrganizationAdmin)
 admin.site.register(Order, OrderAdmin)
+admin.site.register(OrderItem)
 admin.site.register(Error_Code)
 admin.site.register(Rejection_Code)
 admin.site.register(Record)
 admin.site.register(HathiTrust_Item)
 admin.site.register(Publication_State)
-admin.site.register(Workflow_Step)
 admin.site.register(Item, ItemAdmin)
+admin.site.register(DigitalItem, DigitalItemAdmin)
 admin.site.register(Rights)
 admin.site.register(Resource_Type)
 admin.site.register(Metadata, MetadataAdmin)
 admin.site.register(Metadata_Term, Metadata_TermAdmin)
+admin.site.register(ItemIdentifier, ItemIdentifierAdmin)
+admin.site.register(ItemIdentifierType, ItemIdentifierTypeAdmin)
+admin.site.register(DigitalComponent)
+admin.site.register(DigitalComponentType)

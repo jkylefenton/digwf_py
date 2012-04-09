@@ -5892,4 +5892,2006 @@
       "label": "dcterms.type"
     }
   }
+][{"pk": 19, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "African American Literature", "parent_collection": 1, "collection_short_name": "Af Am Lit"}}, {"pk": 12, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Atlanta City Directories", "parent_collection": 1, "collection_short_name": "Atl City Dir"}}, {"pk": 22, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Baedecker Travel Guides", "parent_collection": 1, "collection_short_name": "Baedeckers"}}, {"pk": 25, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Harold J. Berman papers", "parent_collection": null, "collection_short_name": "Berman papers"}}, {"pk": 18, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Civil War Literature", "parent_collection": 1, "collection_short_name": "Civil War Lit"}}, {"pk": 20, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Early Northern European Books", "parent_collection": 1, "collection_short_name": "Early N. Euro"}}, {"pk": 17, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Emory Publications", "parent_collection": 1, "collection_short_name": "Emory Pubs"}}, {"pk": 16, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Emory Yearbooks", "parent_collection": 1, "collection_short_name": "Emory Yrbks"}}, {"pk": 3, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Emory University Archives Series", "parent_collection": null, "collection_short_name": "EUA Series"}}, {"pk": 14, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Georgia State House Journals", "parent_collection": 1, "collection_short_name": "Ga St Hse Jrnls"}}, {"pk": 15, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Georgia State Senate Journals", "parent_collection": 1, "collection_short_name": "Ga St Sen Jrnls"}}, {"pk": 11, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "", "parent_collection": 1, "collection_short_name": "General (Books)"}}, {"pk": 1, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Emory Digital Editions", "parent_collection": null, "collection_short_name": "LSDI"}}, {"pk": 2, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "MARBL Manuscript Collections", "parent_collection": null, "collection_short_name": "MARBL MSS"}}, {"pk": 24, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "William Berry Hartsfield Papers", "parent_collection": 2, "collection_short_name": "MARBL MSS 558"}}, {"pk": 23, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "W. B. (William Butler) Yeats collection", "parent_collection": 2, "collection_short_name": "MARBL MSS 600"}}, {"pk": 10, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "MARBL Rare Books", "parent_collection": 1, "collection_short_name": "MARBL RB"}}, {"pk": 13, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Methodist Conference Minutes", "parent_collection": 1, "collection_short_name": "Meth Conf Min"}}, {"pk": 6, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "", "parent_collection": 1, "collection_short_name": "Methodism"}}, {"pk": 4, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Pitts Theology Library Manuscripts", "parent_collection": null, "collection_short_name": "Pitts MSS"}}, {"pk": 5, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Pitts Theology Library Record Groups", "parent_collection": null, "collection_short_name": "Pitts RG"}}, {"pk": 9, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Regimental Histories", "parent_collection": 1, "collection_short_name": "Regimental Hist"}}, {"pk": 8, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Theology Reference", "parent_collection": 1, "collection_short_name": "Theology Ref"}}, {"pk": 21, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Victorian Triple Decker Books", "parent_collection": 1, "collection_short_name": "Triple Deckers"}}, {"pk": 7, "model": "digwf.collection", "fields": {"collection_url": "", "collection_description": "Victorian Yellowback Books", "parent_collection": 1, "collection_short_name": "Yellowbacks"}}, {"pk": 1, "model": "digwf.publication_state", "fields": {"status": "Not Published"}}, {"pk": 2, "model": "digwf.publication_state", "fields": {"status": "Being Published"}}, {"pk": 3, "model": "digwf.publication_state", "fields": {"status": "Pre Print"}}, {"pk": 4, "model": "digwf.publication_state", "fields": {"status": "Published"}}, {"pk": 1, "model": "digwf.rejection_code", "fields": {"code": "BI", "description": "Fragile or has no binding"}}, {"pk": 2, "model": "digwf.rejection_code", "fields": {"code": "CAT", "description": "Unreadable"}}, {"pk": 3, "model": "digwf.rejection_code", "fields": {"code": "DAM", "description": "Damaged item"}}, {"pk": 4, "model": "digwf.rejection_code", "fields": {"code": "DAT", "description": "In-copyright"}}, {"pk": 5, "model": "digwf.rejection_code", "fields": {"code": "DUP", "description": "Exact duplicate of another item on list"}}, {"pk": 15, "model": "digwf.rejection_code", "fields": {"code": "LARG", "description": "Item to large to scan"}}, {"pk": 6, "model": "digwf.rejection_code", "fields": {"code": "LIST", "description": "Pull list error"}}, {"pk": 7, "model": "digwf.rejection_code", "fields": {"code": "MAR", "description": "Margins/gutters too tight to scan"}}, {"pk": 8, "model": "digwf.rejection_code", "fields": {"code": "MISPG", "description": "Missing Pages (>5) in Item"}}, {"pk": 9, "model": "digwf.rejection_code", "fields": {"code": "NOS", "description": "Item not on shelf (missing/lost)"}}, {"pk": 10, "model": "digwf.rejection_code", "fields": {"code": "OUT", "description": "Item not on shelf (checked out)"}}, {"pk": 11, "model": "digwf.rejection_code", "fields": {"code": "PAG", "description": "Pagination issues (sections out of order e.g.)"}}, {"pk": 12, "model": "digwf.rejection_code", "fields": {"code": "PAP", "description": "Item has brittle pages, no non-destructive scans"}}, {"pk": 13, "model": "digwf.rejection_code", "fields": {"code": "SKW", "description": "Item has skewed text (unreadable)"}}, {"pk": 14, "model": "digwf.rejection_code", "fields": {"code": "SMAL", "description": "Item too small to scan"}}, {"pk": 16, "model": "digwf.rejection_code", "fields": {"code": "SPH", "description": "Item requires special handling, unable to provide"}}, {"pk": 17, "model": "digwf.rejection_code", "fields": {"code": "UNC", "description": "Item has too many uncut pages"}}, {"pk": 18, "model": "digwf.rejection_code", "fields": {"code": "VELUM", "description": "Vellum binding"}}, {"pk": 19, "model": "digwf.rejection_code", "fields": {"code": "WD", "description": "Item was withdrawn"}}, {"pk": 1, "model": "digwf.workflow_step", "fields": {"code": "1", "description": "dfs"}}, {"pk": 1, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "marbl@emory.edu"}}, {"pk": 2, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "eachase@emory.edu"}}, {"pk": 3, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "erussey@emory.edu"}}, {"pk": 4, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "marbl@emory.edu"}}, {"pk": 5, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "stewart.varner@emory.edu"}}, {"pk": 6, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": ""}}, {"pk": 7, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "abogleb@emory.edu"}}, {"pk": 8, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": ""}}, {"pk": 9, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "mcpage@emory.edu"}}, {"pk": 10, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": ""}}, {"pk": 11, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "libmpg@emory.edu"}}, {"pk": 12, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": null, "state": "", "email": "michael.w.konomos@emory.edu"}}, {"pk": 13, "model": "digwf.agent", "fields": {"city": "Atlanta", "zip": 30322, "address1": "1762 Clifton Road NE, Suite 2200", "address2": "", "phone": null, "state": "GA", "email": ""}}, {"pk": 15, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": "", "state": "GA", "email": ""}}, {"pk": 16, "model": "digwf.agent", "fields": {"city": "Atlanta", "zip": 30333, "address1": "1600 Clifton Road, MS - A14", "address2": "", "phone": null, "state": "GA", "email": "asf5@cdc.gov"}}, {"pk": 17, "model": "digwf.agent", "fields": {"city": "", "zip": null, "address1": "", "address2": "", "phone": "", "state": "", "email": "kate.donovan.jarvis@emory.edu"}}, {"pk": 2, "model": "digwf.person", "fields": {"title": null, "person_last_name": "Chase", "person_first_name": "Liz"}}, {"pk": 3, "model": "digwf.person", "fields": {"title": null, "person_last_name": "Roke", "person_first_name": "Elizabeth"}}, {"pk": 5, "model": "digwf.person", "fields": {"title": "Librarian (DiSC)", "person_last_name": "Varner", "person_first_name": "Stuart"}}, {"pk": 7, "model": "digwf.person", "fields": {"title": "", "person_last_name": "Bogle", "person_first_name": "April"}}, {"pk": 9, "model": "digwf.person", "fields": {"title": "Geospatial Services Librarian", "person_last_name": "Page", "person_first_name": "Michael"}}, {"pk": 11, "model": "digwf.person", "fields": {"title": "Director, Pitts Theology Library", "person_last_name": "Graham", "person_first_name": "Pat"}}, {"pk": 12, "model": "digwf.person", "fields": {"title": "Biovisualist, Lead Multimedia Developer", "person_last_name": "Konomos", "person_first_name": "Michael"}}, {"pk": 16, "model": "digwf.person", "fields": {"title": "", "person_last_name": "Hilpertshauser", "person_first_name": "Mary"}}, {"pk": 17, "model": "digwf.person", "fields": {"title": "Emory University Archivist", "person_last_name": "Jarvis", "person_first_name": "Kate"}}, {"pk": 4, "model": "digwf.organization", "fields": {"organization_name": "Manuscript, Archives and Rare Book Library", "organization_short_name": "MARBL", "main_contact": 2}}, {"pk": 6, "model": "digwf.organization", "fields": {"organization_name": "Digital Scholarship Commons", "organization_short_name": "DiSC", "main_contact": 5}}, {"pk": 8, "model": "digwf.organization", "fields": {"organization_name": "Center for the Study of Law and Religion", "organization_short_name": "CSLR", "main_contact": 7}}, {"pk": 10, "model": "digwf.organization", "fields": {"organization_name": "Electronic Data Center", "organization_short_name": "EDC", "main_contact": 9}}, {"pk": 13, "model": "digwf.organization", "fields": {"organization_name": "Emory Department of Surgery", "organization_short_name": "Surgery Dept.", "main_contact": 12}}, {"pk": 15, "model": "digwf.organization", "fields": {"organization_name": "Centers for Disease Control and Prevention", "organization_short_name": "CDC", "main_contact": 16}}, {"pk": 8, "model": "digwf.order", "fields": {"copyright_end_user_rights": "", "release_on_file": false, "date_originals_returned": "2012-01-30", "processing_notes": "", "order_type": "emory_non_library", "date_originals_received": "2012-01-02", "originals_received_by": "JKF", "order_title": "Berman papers, last box", "date_order_completed": "2012-01-30", "delivery_method": "hdd_we_supply", "customer_notes": "", "copyright_permission_terms": "Further reproduction or duplication is limited to fair use, i.e. not used for any purpose other than private study, scholarship, or research, except with the written permission of John Witte, Jr., Literary Executor of the Estate of Harold J. Berman", "date_order_approved": "2012-03-29", "date_order_due": "2012-01-30", "is_rush": true, "copyright_permission_statement": "Reproduced by permission of the Estate of Harold J. Berman", "default_collection": null, "originals_returned_to": "Julie Kessler", "copyright_owner": "Harold J. Berman (Estate)", "owner_originals": "eu-customer", "archive_surrogates": true}}, {"pk": 4, "model": "digwf.order", "fields": {"copyright_end_user_rights": "", "release_on_file": false, "date_originals_returned": "2011-12-20", "processing_notes": "Check with Preservation on Vellum Bound Vault book, spine may be too tight.  Keep item 11 in locked cabinet", "order_type": "marbl_patron", "date_originals_received": "2011-12-19", "originals_received_by": "BMM", "order_title": "O'Daniel order 12/19/2011", "date_order_completed": "2011-12-20", "delivery_method": "yousendit", "customer_notes": "", "copyright_permission_terms": "", "date_order_approved": "2012-03-29", "date_order_due": "2011-12-22", "is_rush": true, "copyright_permission_statement": "", "default_collection": 23, "originals_returned_to": "SC", "copyright_owner": "", "owner_originals": "marbl", "archive_surrogates": true}}, {"pk": 7, "model": "digwf.order", "fields": {"copyright_end_user_rights": "", "release_on_file": false, "date_originals_returned": null, "processing_notes": "will explore digitizing these from microfilm", "order_type": "emory_digital_editions", "date_originals_received": null, "originals_received_by": "", "order_title": "Georgia Methodist Conference Minutes", "date_order_completed": null, "delivery_method": "", "customer_notes": "", "copyright_permission_terms": "", "date_order_approved": "2012-03-29", "date_order_due": "2012-04-29", "is_rush": false, "copyright_permission_statement": "", "default_collection": 13, "originals_returned_to": "", "copyright_owner": "Methodist Church", "owner_originals": "theology", "archive_surrogates": true}}, {"pk": 6, "model": "digwf.order", "fields": {"copyright_end_user_rights": "", "release_on_file": false, "date_originals_returned": null, "processing_notes": "", "order_type": "library_exhibit", "date_originals_received": "2012-01-17", "originals_received_by": "BMM", "order_title": "Love Letters 2012 exhibit", "date_order_completed": "2012-01-23", "delivery_method": "", "customer_notes": "upload images to F:\\Librarywide\\MARBL\\Exhibits\\LoveLetters_2012", "copyright_permission_terms": "", "date_order_approved": "2012-03-29", "date_order_due": "2012-01-24", "is_rush": false, "copyright_permission_statement": "", "default_collection": null, "originals_returned_to": "", "copyright_owner": "", "owner_originals": "marbl", "archive_surrogates": true}}, {"pk": 5, "model": "digwf.order", "fields": {"copyright_end_user_rights": "", "release_on_file": false, "date_originals_returned": "2011-12-07", "processing_notes": "", "order_type": "marbl_patron", "date_originals_received": "2011-11-30", "originals_received_by": "BMM", "order_title": "Rapkin order 11/30/11", "date_order_completed": "2011-12-02", "delivery_method": "yousendit", "customer_notes": "", "copyright_permission_terms": "", "date_order_approved": "2012-03-29", "date_order_due": "2011-12-14", "is_rush": false, "copyright_permission_statement": "", "default_collection": 24, "originals_returned_to": "EC", "copyright_owner": "", "owner_originals": "marbl", "archive_surrogates": true}}, {"pk": 1, "model": "digwf.rights", "fields": {"status": "PUBLIC DOMAIN", "description": "Public Domain work"}}, {"pk": 2, "model": "digwf.rights", "fields": {"status": "C DIG PERM -- WORLD", "description": "Copyrighted, permission granted by copyright holder, only to digitize (not for print-on-demand sales), with unrestricted world-wide access"}}, {"pk": 3, "model": "digwf.rights", "fields": {"status": "C DIG PERM -- CAMPUS", "description": "Copyrighted work, with restricted permission granted by copyright holder to digitize, with access only on Emory campus.  No permission for print-on-demand sales"}}, {"pk": 4, "model": "digwf.rights", "fields": {"status": "C108 -- BUILDING", "description": "Copyright Act Section 108 \r\nhttp://www.law.cornell.edu/uscode/usc_sec_17_00000108----000-.html"}}, {"pk": 5, "model": "digwf.rights", "fields": {"status": "UNDETERMINED >= C108", "description": "Library has at least C108 preservation rights, and may have more.  Unknown whether there are additional donor restrictions.  This rights category provides no public access."}}, {"pk": 9, "model": "digwf.resource_type", "fields": {"type": "3-D object", "description": ""}}, {"pk": 1, "model": "digwf.resource_type", "fields": {"type": "cartographic", "description": "A cartographic (map) resource.  Benefits from supplemental geospatial metadata"}}, {"pk": 11, "model": "digwf.resource_type", "fields": {"type": "microform", "description": "Microfilm, microfiche, micro-opaque, etc."}}, {"pk": 2, "model": "digwf.resource_type", "fields": {"type": "mixed material", "description": ""}}, {"pk": 6, "model": "digwf.resource_type", "fields": {"type": "monograph", "description": "A non-serial publication complete in one volume (book) or a finite number of volumes. Thus it differs from a serial publication such as a magazine, journal, or newspaper."}}, {"pk": 3, "model": "digwf.resource_type", "fields": {"type": "moving image", "description": "A series of visual representations imparting an impression of motion when shown in succession.  Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation. Instances of the type Moving Image must also be describable as instances of the broader type Image."}}, {"pk": 7, "model": "digwf.resource_type", "fields": {"type": "notated music", "description": ""}}, {"pk": 12, "model": "digwf.resource_type", "fields": {"type": "serial", "description": "A serial publication"}}, {"pk": 10, "model": "digwf.resource_type", "fields": {"type": "slide (film)", "description": ""}}, {"pk": 8, "model": "digwf.resource_type", "fields": {"type": "sound recording", "description": ""}}, {"pk": 4, "model": "digwf.resource_type", "fields": {"type": "still image", "description": ""}}, {"pk": 5, "model": "digwf.resource_type", "fields": {"type": "text (non-book)", "description": "Text based resource, whether handwritten or typeset, that is not a publication.  May have a binding, as with scrapbooks."}}, {"pk": 1, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-accessRights", "name": "Access Rights", "label": "dcterms.accessRights"}}, {"pk": 2, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-coverage", "name": "Coverage", "label": "dcterms.coverage"}}, {"pk": 3, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-creator", "name": "Creator", "label": "dcterms.creator"}}, {"pk": 4, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-date", "name": "Date", "label": "dcterms.date"}}, {"pk": 5, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-dateCopyrighted", "name": "Date Copyrighted", "label": "dcterms.dateCopyrighted"}}, {"pk": 6, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-description", "name": "Description", "label": "dcterms.description"}}, {"pk": 7, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-format", "name": "Format", "label": "dcterms.format"}}, {"pk": 8, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-hasPart", "name": "Has Part (Relation)", "label": "dcterms.hasPart"}}, {"pk": 9, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-identifier", "name": "Identifier", "label": "dcterms.identifier"}}, {"pk": 10, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-isPartOf", "name": "Is Part Of (Relation)", "label": "dcterms.isPartOf"}}, {"pk": 11, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-isVersionOf", "name": "Is Version Of (Relation)", "label": "dcterms.isVersionOf"}}, {"pk": 12, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-language", "name": "Language", "label": "dcterms.language"}}, {"pk": 13, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-publisher", "name": "Publisher", "label": "dcterms.publisher"}}, {"pk": 14, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-rights", "name": "Rights", "label": "dcterms.rights"}}, {"pk": 15, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-source", "name": "Source", "label": "dcterms.source"}}, {"pk": 16, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-subject", "name": "Subject", "label": "dcterms.subject"}}, {"pk": 18, "model": "digwf.metadata_term", "fields": {"documentation_url": "", "name": "Title", "label": "dcterms.title"}}, {"pk": 17, "model": "digwf.metadata_term", "fields": {"documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-type", "name": "Type", "label": "dcterms.type"}}][
+  {
+    "pk": 19, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "African American Literature", 
+      "parent_collection": 1, 
+      "collection_short_name": "Af Am Lit"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Atlanta City Directories", 
+      "parent_collection": 1, 
+      "collection_short_name": "Atl City Dir"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Baedecker Travel Guides", 
+      "parent_collection": 1, 
+      "collection_short_name": "Baedeckers"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Harold J. Berman papers", 
+      "parent_collection": null, 
+      "collection_short_name": "Berman papers"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Civil War Literature", 
+      "parent_collection": 1, 
+      "collection_short_name": "Civil War Lit"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Early Northern European Books", 
+      "parent_collection": 1, 
+      "collection_short_name": "Early N. Euro"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Emory Publications", 
+      "parent_collection": 1, 
+      "collection_short_name": "Emory Pubs"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Emory Yearbooks", 
+      "parent_collection": 1, 
+      "collection_short_name": "Emory Yrbks"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Emory University Archives Series", 
+      "parent_collection": null, 
+      "collection_short_name": "EUA Series"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Georgia State House Journals", 
+      "parent_collection": 1, 
+      "collection_short_name": "Ga St Hse Jrnls"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Georgia State Senate Journals", 
+      "parent_collection": 1, 
+      "collection_short_name": "Ga St Sen Jrnls"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "", 
+      "parent_collection": 1, 
+      "collection_short_name": "General (Books)"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Emory Digital Editions", 
+      "parent_collection": null, 
+      "collection_short_name": "LSDI"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "MARBL Manuscript Collections", 
+      "parent_collection": null, 
+      "collection_short_name": "MARBL MSS"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "William Berry Hartsfield Papers", 
+      "parent_collection": 2, 
+      "collection_short_name": "MARBL MSS 558"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "W. B. (William Butler) Yeats collection", 
+      "parent_collection": 2, 
+      "collection_short_name": "MARBL MSS 600"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "MARBL Rare Books", 
+      "parent_collection": 1, 
+      "collection_short_name": "MARBL RB"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Methodist Conference Minutes", 
+      "parent_collection": 1, 
+      "collection_short_name": "Meth Conf Min"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "", 
+      "parent_collection": 1, 
+      "collection_short_name": "Methodism"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Pitts Theology Library Manuscripts", 
+      "parent_collection": null, 
+      "collection_short_name": "Pitts MSS"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Pitts Theology Library Record Groups", 
+      "parent_collection": null, 
+      "collection_short_name": "Pitts RG"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Regimental Histories", 
+      "parent_collection": 1, 
+      "collection_short_name": "Regimental Hist"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Theology Reference", 
+      "parent_collection": 1, 
+      "collection_short_name": "Theology Ref"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Victorian Triple Decker Books", 
+      "parent_collection": 1, 
+      "collection_short_name": "Triple Deckers"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.collection", 
+    "fields": {
+      "collection_url": "", 
+      "collection_description": "Victorian Yellowback Books", 
+      "parent_collection": 1, 
+      "collection_short_name": "Yellowbacks"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.publication_state", 
+    "fields": {
+      "status": "Not Published"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.publication_state", 
+    "fields": {
+      "status": "Being Published"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.publication_state", 
+    "fields": {
+      "status": "Pre Print"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.publication_state", 
+    "fields": {
+      "status": "Published"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "BI", 
+      "description": "Fragile or has no binding"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "CAT", 
+      "description": "Unreadable"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "DAM", 
+      "description": "Damaged item"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "DAT", 
+      "description": "In-copyright"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "DUP", 
+      "description": "Exact duplicate of another item on list"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "LARG", 
+      "description": "Item to large to scan"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "LIST", 
+      "description": "Pull list error"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "MAR", 
+      "description": "Margins/gutters too tight to scan"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "MISPG", 
+      "description": "Missing Pages (>5) in Item"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "NOS", 
+      "description": "Item not on shelf (missing/lost)"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "OUT", 
+      "description": "Item not on shelf (checked out)"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "PAG", 
+      "description": "Pagination issues (sections out of order e.g.)"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "PAP", 
+      "description": "Item has brittle pages, no non-destructive scans"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "SKW", 
+      "description": "Item has skewed text (unreadable)"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "SMAL", 
+      "description": "Item too small to scan"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "SPH", 
+      "description": "Item requires special handling, unable to provide"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "UNC", 
+      "description": "Item has too many uncut pages"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "VELUM", 
+      "description": "Vellum binding"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "digwf.rejection_code", 
+    "fields": {
+      "code": "WD", 
+      "description": "Item was withdrawn"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "marbl@emory.edu"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "eachase@emory.edu"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "erussey@emory.edu"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "marbl@emory.edu"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "stewart.varner@emory.edu"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "abogleb@emory.edu"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "mcpage@emory.edu"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "libmpg@emory.edu"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": null, 
+      "state": "", 
+      "email": "michael.w.konomos@emory.edu"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "Atlanta", 
+      "zip": 30322, 
+      "address1": "1762 Clifton Road NE, Suite 2200", 
+      "address2": "", 
+      "phone": null, 
+      "state": "GA", 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": "", 
+      "state": "GA", 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "Atlanta", 
+      "zip": 30333, 
+      "address1": "1600 Clifton Road, MS - A14", 
+      "address2": "", 
+      "phone": null, 
+      "state": "GA", 
+      "email": "asf5@cdc.gov"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "digwf.agent", 
+    "fields": {
+      "city": "", 
+      "zip": null, 
+      "address1": "", 
+      "address2": "", 
+      "phone": "", 
+      "state": "", 
+      "email": "kate.donovan.jarvis@emory.edu"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": null, 
+      "person_last_name": "Chase", 
+      "person_first_name": "Liz"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": null, 
+      "person_last_name": "Roke", 
+      "person_first_name": "Elizabeth"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "Librarian (DiSC)", 
+      "person_last_name": "Varner", 
+      "person_first_name": "Stuart"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "", 
+      "person_last_name": "Bogle", 
+      "person_first_name": "April"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "Geospatial Services Librarian", 
+      "person_last_name": "Page", 
+      "person_first_name": "Michael"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "Director, Pitts Theology Library", 
+      "person_last_name": "Graham", 
+      "person_first_name": "Pat"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "Biovisualist, Lead Multimedia Developer", 
+      "person_last_name": "Konomos", 
+      "person_first_name": "Michael"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "", 
+      "person_last_name": "Hilpertshauser", 
+      "person_first_name": "Mary"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "digwf.person", 
+    "fields": {
+      "title": "Emory University Archivist", 
+      "person_last_name": "Jarvis", 
+      "person_first_name": "Kate"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.organization", 
+    "fields": {
+      "organization_name": "Manuscript, Archives and Rare Book Library", 
+      "organization_short_name": "MARBL", 
+      "main_contact": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.organization", 
+    "fields": {
+      "organization_name": "Digital Scholarship Commons", 
+      "organization_short_name": "DiSC", 
+      "main_contact": 5
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.organization", 
+    "fields": {
+      "organization_name": "Center for the Study of Law and Religion", 
+      "organization_short_name": "CSLR", 
+      "main_contact": 7
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.organization", 
+    "fields": {
+      "organization_name": "Electronic Data Center", 
+      "organization_short_name": "EDC", 
+      "main_contact": 9
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.organization", 
+    "fields": {
+      "organization_name": "Emory Department of Surgery", 
+      "organization_short_name": "Surgery Dept.", 
+      "main_contact": 12
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "digwf.organization", 
+    "fields": {
+      "organization_name": "Centers for Disease Control and Prevention", 
+      "organization_short_name": "CDC", 
+      "main_contact": 16
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "3-D object", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "cartographic", 
+      "description": "A cartographic (map) resource.  Benefits from supplemental geospatial metadata"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "microform", 
+      "description": "Microfilm, microfiche, micro-opaque, etc."
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "mixed material", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "monograph", 
+      "description": "A non-serial publication complete in one volume (book) or a finite number of volumes. Thus it differs from a serial publication such as a magazine, journal, or newspaper."
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "moving image", 
+      "description": "A series of visual representations imparting an impression of motion when shown in succession.  Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation. Instances of the type Moving Image must also be describable as instances of the broader type Image."
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "notated music", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "serial", 
+      "description": "A serial publication"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "slide (film)", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "sound recording", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "still image", 
+      "description": ""
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.resource_type", 
+    "fields": {
+      "type": "text (non-book)", 
+      "description": "Text based resource, whether handwritten or typeset, that is not a publication.  May have a binding, as with scrapbooks."
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.rights", 
+    "fields": {
+      "status": "PUBLIC DOMAIN", 
+      "description": "Public Domain work"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.rights", 
+    "fields": {
+      "status": "C DIG PERM -- WORLD", 
+      "description": "Copyrighted, permission granted by copyright holder, only to digitize (not for print-on-demand sales), with unrestricted world-wide access"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.rights", 
+    "fields": {
+      "status": "C DIG PERM -- CAMPUS", 
+      "description": "Copyrighted work, with restricted permission granted by copyright holder to digitize, with access only on Emory campus.  No permission for print-on-demand sales"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.rights", 
+    "fields": {
+      "status": "C108 -- BUILDING", 
+      "description": "Copyright Act Section 108 \r\nhttp://www.law.cornell.edu/uscode/usc_sec_17_00000108----000-.html"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.rights", 
+    "fields": {
+      "status": "UNDETERMINED >= C108", 
+      "description": "Library has at least C108 preservation rights, and may have more.  Unknown whether there are additional donor restrictions.  This rights category provides no public access."
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-accessRights", 
+      "name": "Access Rights", 
+      "label": "dcterms.accessRights"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-coverage", 
+      "name": "Coverage", 
+      "label": "dcterms.coverage"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-creator", 
+      "name": "Creator", 
+      "label": "dcterms.creator"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-date", 
+      "name": "Date", 
+      "label": "dcterms.date"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-dateCopyrighted", 
+      "name": "Date Copyrighted", 
+      "label": "dcterms.dateCopyrighted"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-description", 
+      "name": "Description", 
+      "label": "dcterms.description"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-format", 
+      "name": "Format", 
+      "label": "dcterms.format"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-hasPart", 
+      "name": "Has Part (Relation)", 
+      "label": "dcterms.hasPart"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-identifier", 
+      "name": "Identifier", 
+      "label": "dcterms.identifier"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-isPartOf", 
+      "name": "Is Part Of (Relation)", 
+      "label": "dcterms.isPartOf"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-isVersionOf", 
+      "name": "Is Version Of (Relation)", 
+      "label": "dcterms.isVersionOf"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-language", 
+      "name": "Language", 
+      "label": "dcterms.language"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-publisher", 
+      "name": "Publisher", 
+      "label": "dcterms.publisher"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-rights", 
+      "name": "Rights", 
+      "label": "dcterms.rights"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-source", 
+      "name": "Source", 
+      "label": "dcterms.source"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-subject", 
+      "name": "Subject", 
+      "label": "dcterms.subject"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Title", 
+      "label": "dcterms.title"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "digwf.metadata_term", 
+    "fields": {
+      "documentation_url": "http://dublincore.org/documents/dcmi-terms/#terms-type", 
+      "name": "Type", 
+      "label": "dcterms.type"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "https://confluence.ucop.edu/display/Curation/ARK+Anatomy", 
+      "name": "Archival Resource Key Name", 
+      "label": "ARK PID"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Local Barcode", 
+      "label": "Barcode"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Call Number", 
+      "label": "CALL#"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Digital Masters - Other Identifier", 
+      "label": "DM-OID"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "http://masters.library.emory.edu/", 
+      "name": "Digital Masters Record Number", 
+      "label": "DM#"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "http://www.isbn.org/standards/home/about/faqs_main.html", 
+      "name": "International Standard Book Number (10 digit)", 
+      "label": "ISBN10"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "http://www.isbn.org/standards/home/about/faqs_main.html", 
+      "name": "International Standard Book Number (13 digit)", 
+      "label": "ISBN13"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "http://www.issn.org/2-22635-What-is-an-ISSN.php", 
+      "name": "International Standard Serial Number", 
+      "label": "ISSN"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "http://www.loc.gov/marc/lccn.html", 
+      "name": "Library of Congress Control Number", 
+      "label": "LCCN#"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.itemidentifiertype", 
+    "fields": {
+      "documentation_url": "http://www.oclc.org/batchprocessing/controlnumber.htm", 
+      "name": "OCLC record control number", 
+      "label": "OCLC#"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "ALTO from Kirtas software", 
+      "default_regex": "Output/Metadata/ALTO/*_ALTO", 
+      "label": "ALTO"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Dublin Core XML", 
+      "default_regex": "", 
+      "label": "DC-XML"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Display/Presentation Image Versions", 
+      "default_regex": "Output/Images/*", 
+      "label": "DISPLAY"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "JPEG 2000 display files", 
+      "default_regex": "Output/Images/JP2/*.jp2", 
+      "label": "JP2"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "MARCXML from ILS", 
+      "default_regex": "*_MRC.xml", 
+      "label": "MARCXML"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Image Masters (if diff. from RAW)", 
+      "default_regex": "IMAGES/*", 
+      "label": "MASTER"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "METS from Kirtas software", 
+      "default_regex": "Output/Metadata/*_METS.xml", 
+      "label": "METS"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "MODS file", 
+      "default_regex": "", 
+      "label": "MODS"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "ABBYY Finereader XML", 
+      "default_regex": "Output/XML/*.xml", 
+      "label": "OCR-ABBYY"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Adobe Acrobat PDF file", 
+      "default_regex": "Output/PDF/*.pdf", 
+      "label": "PDF"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Adobe Acrobat PDF-Archival", 
+      "default_regex": "", 
+      "label": "PDF-A"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Word Position files from OCR", 
+      "default_regex": "Output/OCR/*.pos", 
+      "label": "POS"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "'RAW' images from camera", 
+      "default_regex": "IMAGES/*", 
+      "label": "RAW"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.digitalcomponenttype", 
+    "fields": {
+      "documentation_url": "", 
+      "name": "Plain Text files from OCR", 
+      "default_regex": "Output/OCR/*.txt", 
+      "label": "TXT"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "\"On a child's death\" MS Poem", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 10, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 6, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": true, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Airport (4 photos together)", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 24, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Coole Park poem, 2 pages", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 10, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 6, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": true, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Downtown Atlanta 1960s", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 23, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "H. on roof of City Hall 1961", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": true, 
+      "pub_year": null, 
+      "collection_id": 24, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Lady Gregory Photograph", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 10, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 6, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Photo of Lady Gregory", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 10, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 6, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Photo of Lady Gregory's library", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 10, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 6, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Photo: W.B. Yeats with daughter, Anne, 1919.", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 23, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Photo: W.B. Yeats, 1903", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": true, 
+      "pub_year": null, 
+      "collection_id": 23, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Photo: Yeats and George at Mission Conception in San Antonio, Texas, 1920.", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": true, 
+      "pub_year": null, 
+      "collection_id": 23, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": true, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "Portrait by Augustus John 1907", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": false, 
+      "pub_year": null, 
+      "collection_id": 23, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "digwf.item", 
+    "fields": {
+      "updated_at": "2012-04-05", 
+      "time_spent": null, 
+      "to_archive": false, 
+      "has_typeset_text": false, 
+      "notification_email": "", 
+      "has_rights": null, 
+      "is_rush": false, 
+      "foldout_count": null, 
+      "title": "WBH age 4-5", 
+      "is_paginated": false, 
+      "note": "", 
+      "due_date": null, 
+      "is_already_digitized": true, 
+      "pub_year": null, 
+      "collection_id": 24, 
+      "pub_place": "", 
+      "rejection_code": null, 
+      "created_at": "2012-04-05", 
+      "has_binding": false, 
+      "is_brittle": false, 
+      "enumcron": "", 
+      "pub_state": null, 
+      "is_resource_type": 4, 
+      "owner_originals": "", 
+      "is_serial": false
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.order", 
+    "fields": {
+      "copyright_end_user_rights": "", 
+      "release_on_file": false, 
+      "date_originals_returned": "2012-01-30", 
+      "processing_notes": "", 
+      "order_type": "emory_non_library", 
+      "date_originals_received": "2012-01-02", 
+      "originals_received_by": "JKF", 
+      "order_title": "Berman papers, last box", 
+      "date_order_completed": "2012-01-30", 
+      "delivery_method": "hdd_we_supply", 
+      "customer_notes": "", 
+      "copyright_permission_terms": "Further reproduction or duplication is limited to fair use, i.e. not used for any purpose other than private study, scholarship, or research, except with the written permission of John Witte, Jr., Literary Executor of the Estate of Harold J. Berman", 
+      "date_order_approved": "2012-03-29", 
+      "date_order_due": "2012-01-30", 
+      "is_rush": true, 
+      "copyright_permission_statement": "Reproduced by permission of the Estate of Harold J. Berman", 
+      "default_collection": null, 
+      "originals_returned_to": "Julie Kessler", 
+      "copyright_owner": "Harold J. Berman (Estate)", 
+      "owner_originals": "eu-customer", 
+      "archive_surrogates": true
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.order", 
+    "fields": {
+      "copyright_end_user_rights": "", 
+      "release_on_file": false, 
+      "date_originals_returned": "2011-12-20", 
+      "processing_notes": "Check with Preservation on Vellum Bound Vault book, spine may be too tight.  Keep item 11 in locked cabinet", 
+      "order_type": "marbl_patron", 
+      "date_originals_received": "2011-12-19", 
+      "originals_received_by": "BMM", 
+      "order_title": "O'Daniel order 12/19/2011", 
+      "date_order_completed": "2011-12-20", 
+      "delivery_method": "yousendit", 
+      "customer_notes": "", 
+      "copyright_permission_terms": "", 
+      "date_order_approved": "2012-03-29", 
+      "date_order_due": "2011-12-22", 
+      "is_rush": true, 
+      "copyright_permission_statement": "", 
+      "default_collection": 23, 
+      "originals_returned_to": "SC", 
+      "copyright_owner": "", 
+      "owner_originals": "marbl", 
+      "archive_surrogates": true
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.order", 
+    "fields": {
+      "copyright_end_user_rights": "", 
+      "release_on_file": false, 
+      "date_originals_returned": null, 
+      "processing_notes": "will explore digitizing these from microfilm", 
+      "order_type": "emory_digital_editions", 
+      "date_originals_received": null, 
+      "originals_received_by": "", 
+      "order_title": "Georgia Methodist Conference Minutes", 
+      "date_order_completed": null, 
+      "delivery_method": "", 
+      "customer_notes": "", 
+      "copyright_permission_terms": "", 
+      "date_order_approved": "2012-03-29", 
+      "date_order_due": "2012-04-29", 
+      "is_rush": false, 
+      "copyright_permission_statement": "", 
+      "default_collection": 13, 
+      "originals_returned_to": "", 
+      "copyright_owner": "Methodist Church", 
+      "owner_originals": "theology", 
+      "archive_surrogates": true
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.order", 
+    "fields": {
+      "copyright_end_user_rights": "", 
+      "release_on_file": false, 
+      "date_originals_returned": null, 
+      "processing_notes": "", 
+      "order_type": "library_exhibit", 
+      "date_originals_received": "2012-01-17", 
+      "originals_received_by": "BMM", 
+      "order_title": "Love Letters 2012 exhibit", 
+      "date_order_completed": "2012-01-23", 
+      "delivery_method": "", 
+      "customer_notes": "upload images to F:\\Librarywide\\MARBL\\Exhibits\\LoveLetters_2012", 
+      "copyright_permission_terms": "", 
+      "date_order_approved": "2012-03-29", 
+      "date_order_due": "2012-01-24", 
+      "is_rush": false, 
+      "copyright_permission_statement": "", 
+      "default_collection": null, 
+      "originals_returned_to": "", 
+      "copyright_owner": "", 
+      "owner_originals": "marbl", 
+      "archive_surrogates": true
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.order", 
+    "fields": {
+      "copyright_end_user_rights": "", 
+      "release_on_file": false, 
+      "date_originals_returned": "2011-12-07", 
+      "processing_notes": "", 
+      "order_type": "marbl_patron", 
+      "date_originals_received": "2011-11-30", 
+      "originals_received_by": "BMM", 
+      "order_title": "Rapkin order 11/30/11", 
+      "date_order_completed": "2011-12-02", 
+      "delivery_method": "yousendit", 
+      "customer_notes": "", 
+      "copyright_permission_terms": "", 
+      "date_order_approved": "2012-03-29", 
+      "date_order_due": "2011-12-14", 
+      "is_rush": false, 
+      "copyright_permission_statement": "", 
+      "default_collection": 24, 
+      "originals_returned_to": "EC", 
+      "copyright_owner": "", 
+      "owner_originals": "marbl", 
+      "archive_surrogates": true
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.orderitem", 
+    "fields": {
+      "item": 2, 
+      "order": 4, 
+      "date_added": "2012-04-05 08:52:44"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.orderitem", 
+    "fields": {
+      "item": 3, 
+      "order": 4, 
+      "date_added": "2012-04-05 08:52:44"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.orderitem", 
+    "fields": {
+      "item": 5, 
+      "order": 4, 
+      "date_added": "2012-04-05 08:57:55"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.orderitem", 
+    "fields": {
+      "item": 4, 
+      "order": 4, 
+      "date_added": "2012-04-05 08:57:55"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.orderitem", 
+    "fields": {
+      "item": 7, 
+      "order": 4, 
+      "date_added": "2012-04-05 09:35:36"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.orderitem", 
+    "fields": {
+      "item": 10, 
+      "order": 4, 
+      "date_added": "2012-04-05 09:56:54"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 2, 
+      "type": 1, 
+      "value": "PR4728 G5C65 1931"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 3, 
+      "type": 1, 
+      "value": "PR5900 A3 1899 C2"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 4, 
+      "type": 1, 
+      "value": "PR4728 G5Z27 1978a"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 5, 
+      "type": 1, 
+      "value": "PR4728 G5A19 1971 v2"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 6, 
+      "type": 1, 
+      "value": "PR4728 G5Z5 1973"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 7, 
+      "type": 9, 
+      "value": "10211"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 8, 
+      "type": 9, 
+      "value": "3580"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 9, 
+      "type": 9, 
+      "value": "3588"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 9, 
+      "type": 10, 
+      "value": "0600-013"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 10, 
+      "type": 9, 
+      "value": "3610"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 11, 
+      "type": 9, 
+      "value": "4140"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "digwf.itemidentifier", 
+    "fields": {
+      "item": 14, 
+      "type": 9, 
+      "value": "4130"
+    }
+  }
 ]
