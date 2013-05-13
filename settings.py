@@ -133,9 +133,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.localflavor', 
+    'django_extensions', 
     'south', 
     'permissions', 
     'workflows', 
+    'admin_export', 
     'digwf',
     'repo_checker',
 )

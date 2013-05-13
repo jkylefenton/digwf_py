@@ -15,6 +15,10 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+    # generic export to xls on django admin interface
+    url(r'^admin_export/', include('admin_export.urls')),
+
 )
 
 urlpatterns += patterns('django.views.generic.simple',

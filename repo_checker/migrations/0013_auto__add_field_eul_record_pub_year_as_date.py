@@ -8,78 +8,14 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Adding model 'Eul_Record'
-        db.create_table('repo_checker_eul_record', (
-            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('barcode', self.gf('django.db.models.fields.CharField')(max_length=16, unique=True, null=True, db_index=True)),
-            ('call_no_expanded', self.gf('django.db.models.fields.CharField')(max_length=19, blank=True)),
-            ('no_circs', self.gf('django.db.models.fields.CharField')(max_length=1, blank=True)),
-            ('item_type', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
-            ('copy_num', self.gf('django.db.models.fields.CharField')(max_length=1, blank=True)),
-            ('home_location', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
-            ('current_location', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
-            ('library', self.gf('django.db.models.fields.CharField')(max_length=9, blank=True)),
-            ('date_cataloged', self.gf('django.db.models.fields.CharField')(max_length=10, blank=True)),
-            ('title_control', self.gf('django.db.models.fields.CharField')(max_length=14, blank=True)),
-            ('ohohoh', self.gf('django.db.models.fields.CharField')(max_length=15, blank=True)),
-            ('fixed_field', self.gf('django.db.models.fields.CharField')(max_length=40, blank=True)),
-            ('personal_author', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, blank=True)),
-            ('corporate_author', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=100, blank=True)),
-            ('meeting_name', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=100, blank=True)),
-            ('title', self.gf('django.db.models.fields.CharField')(max_length=572, blank=True)),
-            ('publication_info', self.gf('django.db.models.fields.CharField')(max_length=86, blank=True)),
-            ('physical_description', self.gf('django.db.models.fields.CharField')(max_length=24, blank=True)),
-            ('emory_digitization_note', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('local_note', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('url', self.gf('django.db.models.fields.URLField')(max_length=255, blank=True)),
-            ('pub_year', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=4, blank=True)),
-            ('call_no', self.gf('django.db.models.fields.CharField')(max_length=14, blank=True)),
-            ('date_what', self.gf('django.db.models.fields.CharField')(max_length=8, blank=True)),
-            ('oclc', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
-            ('lccn', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
-            ('isbn10', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=10, null=True, blank=True)),
-            ('isbn13', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=13, null=True, blank=True)),
-            ('issn', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
-            ('ht_rec_num', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
-            ('ol_id', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=50, null=True, blank=True)),
-            ('oclc_trimmed', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=11, null=True, blank=True)),
-        ))
-        db.send_create_signal('repo_checker', ['Eul_Record'])
-
-        # Adding model 'HathiTrust_Item'
-        db.create_table('repo_checker_hathitrust_item', (
-            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('volume_identifier', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=25, blank=True)),
-            ('access', self.gf('django.db.models.fields.CharField')(max_length=5, blank=True)),
-            ('rights', self.gf('django.db.models.fields.CharField')(max_length=11, blank=True)),
-            ('um_rec_num', self.gf('django.db.models.fields.CharField')(max_length=9, blank=True)),
-            ('enumcron', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
-            ('source', self.gf('django.db.models.fields.CharField')(max_length=3, blank=True)),
-            ('source_inst_rec_num', self.gf('django.db.models.fields.CharField')(max_length=15, blank=True)),
-            ('oclc', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=16, blank=True)),
-            ('isbn', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=255, blank=True)),
-            ('issn', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=90, blank=True)),
-            ('lccn', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=12, blank=True)),
-            ('title', self.gf('django.db.models.fields.TextField')(db_index=True, blank=True)),
-            ('imprint', self.gf('django.db.models.fields.TextField')(blank=True)),
-            ('rights_reason_code', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=4, blank=True)),
-            ('last_updated', self.gf('django.db.models.fields.DateTimeField')(default=datetime.date.today, null=True, blank=True)),
-            ('gov_doc', self.gf('django.db.models.fields.BooleanField')(default=False)),
-            ('pub_date', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=9, blank=True)),
-            ('pub_place', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=3, blank=True)),
-            ('language', self.gf('django.db.models.fields.CharField')(max_length=3, blank=True)),
-            ('bibl_format', self.gf('django.db.models.fields.CharField')(db_index=True, max_length=2, blank=True)),
-            ('local_created', self.gf('django.db.models.fields.DateField')(auto_now_add=True, blank=True)),
-            ('local_last_modified', self.gf('django.db.models.fields.DateField')(auto_now=True, blank=True)),
-        ))
-        db.send_create_signal('repo_checker', ['HathiTrust_Item'])
+        # Adding field 'Eul_Record.pub_year_as_date'
+        db.add_column('repo_checker_eul_record', 'pub_year_as_date',
+                      self.gf('django.db.models.fields.DateField')(null=True, blank=True),
+                      keep_default=False)
 
     def backwards(self, orm):
-        # Deleting model 'Eul_Record'
-        db.delete_table('repo_checker_eul_record')
-
-        # Deleting model 'HathiTrust_Item'
-        db.delete_table('repo_checker_hathitrust_item')
+        # Deleting field 'Eul_Record.pub_year_as_date'
+        db.delete_column('repo_checker_eul_record', 'pub_year_as_date')
 
     models = {
         'repo_checker.eul_record': {
@@ -92,8 +28,22 @@ class Migration(SchemaMigration):
             'current_location': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
             'date_cataloged': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
             'date_what': ('django.db.models.fields.CharField', [], {'max_length': '8', 'blank': 'True'}),
+            'digitization_proposal': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
+            'emory_ark_url': ('django.db.models.fields.URLField', [], {'max_length': '255', 'blank': 'True'}),
             'emory_digitization_note': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
+            'enumcron': ('django.db.models.fields.CharField', [], {'max_length': '30', 'blank': 'True'}),
+            'ff_ctry': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '3', 'null': 'True', 'blank': 'True'}),
+            'ff_dat_typ': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'ff_date1': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '4', 'null': 'True', 'blank': 'True'}),
+            'ff_date2': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '4', 'null': 'True', 'blank': 'True'}),
+            'ff_form_of_item': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'ff_freq': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'ff_govtpub': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'ff_lang': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '3', 'null': 'True', 'blank': 'True'}),
+            'ff_nature_of_work': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'ff_type_of_cr': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
             'fixed_field': ('django.db.models.fields.CharField', [], {'max_length': '40', 'blank': 'True'}),
+            'height_cm': ('django.db.models.fields.IntegerField', [], {'db_index': 'True', 'max_length': '2', 'null': 'True', 'blank': 'True'}),
             'home_location': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
             'ht_rec_num': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
@@ -101,6 +51,8 @@ class Migration(SchemaMigration):
             'isbn13': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '13', 'null': 'True', 'blank': 'True'}),
             'issn': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'item_type': ('django.db.models.fields.CharField', [], {'max_length': '10', 'blank': 'True'}),
+            'lc_class': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'lc_subclass': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '2', 'null': 'True', 'blank': 'True'}),
             'lccn': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
             'library': ('django.db.models.fields.CharField', [], {'max_length': '9', 'blank': 'True'}),
             'local_note': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
@@ -110,13 +62,17 @@ class Migration(SchemaMigration):
             'oclc_trimmed': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '11', 'null': 'True', 'blank': 'True'}),
             'ohohoh': ('django.db.models.fields.CharField', [], {'max_length': '15', 'blank': 'True'}),
             'ol_id': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'null': 'True', 'blank': 'True'}),
+            'online_copy_available': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'pagination': ('django.db.models.fields.IntegerField', [], {'db_index': 'True', 'max_length': '4', 'null': 'True', 'blank': 'True'}),
             'personal_author': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '50', 'blank': 'True'}),
             'physical_description': ('django.db.models.fields.CharField', [], {'max_length': '24', 'blank': 'True'}),
             'pub_year': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '4', 'blank': 'True'}),
+            'pub_year_as_date': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
             'publication_info': ('django.db.models.fields.CharField', [], {'max_length': '86', 'blank': 'True'}),
             'title': ('django.db.models.fields.CharField', [], {'max_length': '572', 'blank': 'True'}),
             'title_control': ('django.db.models.fields.CharField', [], {'max_length': '14', 'blank': 'True'}),
-            'url': ('django.db.models.fields.URLField', [], {'max_length': '255', 'blank': 'True'})
+            'url': ('django.db.models.fields.URLField', [], {'max_length': '255', 'blank': 'True'}),
+            'width_cm': ('django.db.models.fields.IntegerField', [], {'db_index': 'True', 'max_length': '2', 'null': 'True', 'blank': 'True'})
         },
         'repo_checker.hathitrust_item': {
             'Meta': {'object_name': 'HathiTrust_Item'},
@@ -143,6 +99,18 @@ class Migration(SchemaMigration):
             'title': ('django.db.models.fields.TextField', [], {'db_index': 'True', 'blank': 'True'}),
             'um_rec_num': ('django.db.models.fields.CharField', [], {'max_length': '9', 'blank': 'True'}),
             'volume_identifier': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '25', 'blank': 'True'})
+        },
+        'repo_checker.openlibrary_edition': {
+            'Meta': {'object_name': 'OpenLibrary_Edition'},
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'isbn_10': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '30', 'null': 'True', 'blank': 'True'}),
+            'isbn_13': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '30', 'null': 'True', 'blank': 'True'}),
+            'lccn': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '30', 'blank': 'True'}),
+            'oclc': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '30', 'blank': 'True'}),
+            'ol_key': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '25', 'blank': 'True'}),
+            'publish_date': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '90', 'blank': 'True'}),
+            'publisher': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '255', 'blank': 'True'}),
+            'title': ('django.db.models.fields.CharField', [], {'db_index': 'True', 'max_length': '255', 'blank': 'True'})
         }
     }
 
