@@ -1,0 +1,142 @@
+14366871
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm14366871/ocm14366871/ocm14366871_MRC.xml http://s3.us.archive.org/14366871.emory.edu/14366871.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3440    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3440    0     0  100  3440      0   1637  0:00:02  0:00:02 --:--:--  1703100  3440    0     0  100  3440      0    889  0:00:03  0:00:03 --:--:--   909100  3440    0     0  100  3440      0    706  0:00:04  0:00:04 --:--:--   719100  3440    0     0  100  3440      0    586  0:00:05  0:00:05 --:--:--   594100  3440    0     0  100  3440      0    500  0:00:06  0:00:06 --:--:--   594100  3440    0     0  100  3440      0    437  0:00:07  0:00:07 --:--:--     0100  3440    0     0  100  3440      0    387  0:00:08  0:00:08 --:--:--     0100  3440    0     0  100  3440      0    363  0:00:09  0:00:09 --:--:--     0100  3440    0     0  100  3440      0    363  0:00:09  0:00:09 --:--:--     0
+zip -r /temp/ocm14366871_images.zip /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0001.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0002.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0003.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0004.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0005.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0006.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0007.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0008.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0009.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0010.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0011.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0012.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0013.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0014.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0015.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0016.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0017.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0018.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0019.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0020.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0021.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0022.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0023.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0024.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0025.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0026.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0027.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0028.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0029.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0030.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0031.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0032.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0033.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0034.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0035.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0036.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0037.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0038.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0039.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0040.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0041.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0042.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0043.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0044.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0045.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0046.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0047.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0048.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0049.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0050.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0051.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0052.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0053.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0054.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0055.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0056.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0057.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0058.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0059.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0060.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0061.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0062.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0063.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0064.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0065.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0066.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0067.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0068.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0069.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0070.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0071.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0072.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0073.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0074.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0075.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0076.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0077.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0078.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0079.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0080.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0081.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0082.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0083.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0084.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0085.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0086.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0087.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0088.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0089.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0090.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0091.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0092.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0093.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0094.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0095.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0096.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0097.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0098.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0099.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0100.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0101.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0102.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0103.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0104.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0105.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0106.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0107.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0108.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0109.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0110.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0111.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0112.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0113.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0114.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0115.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0116.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0117.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0118.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0119.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0120.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0121.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0122.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0123.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0124.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0125.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0126.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0127.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0128.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0129.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0130.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0131.tif /mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0132.tif
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0001.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0002.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0003.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0004.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0005.tif (deflated 2%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0006.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0007.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0008.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0009.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0010.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0011.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0012.tif (deflated 6%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0013.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0014.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0015.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0016.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0017.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0018.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0019.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0020.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0021.tif (deflated 8%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0022.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0023.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0024.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0025.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0026.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0027.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0028.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0029.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0030.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0031.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0032.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0033.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0034.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0035.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0036.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0037.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0038.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0039.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0040.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0041.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0042.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0043.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0044.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0045.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0046.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0047.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0048.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0049.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0050.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0051.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0052.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0053.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0054.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0055.tif (deflated 6%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0056.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0057.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0058.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0059.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0060.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0061.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0062.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0063.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0064.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0065.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0066.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0067.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0068.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0069.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0070.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0071.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0072.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0073.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0074.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0075.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0076.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0077.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0078.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0079.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0080.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0081.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0082.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0083.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0084.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0085.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0086.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0087.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0088.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0089.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0090.tif (deflated 2%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0091.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0092.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0093.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0094.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0095.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0096.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0097.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0098.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0099.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0100.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0101.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0102.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0103.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0104.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0105.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0106.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0107.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0108.tif (deflated 1%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0109.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0110.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0111.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0112.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0113.tif (deflated 3%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0114.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0115.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0116.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0117.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0118.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0119.tif (deflated 7%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0120.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0121.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0122.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0123.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0124.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0125.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0126.tif (deflated 4%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0127.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0128.tif (deflated 5%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0129.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0130.tif (deflated 79%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0131.tif (deflated 80%)
+  adding: mnt/lsdi/ocm14366871/ocm14366871/Output/ocm14366871_0132.tif (deflated 79%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm14366871_images.zip http://s3.us.archive.org/14366871.emory.edu/14366871_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 25.3M    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 25.3M    0     0    0  160k      0   119k  0:03:37  0:00:01  0:03:36  127k  3 25.3M    0     0    3  880k      0   375k  0:01:09  0:00:02  0:01:07  389k  6 25.3M    0     0    6 1664k      0   493k  0:00:52  0:00:03  0:00:49  507k  9 25.3M    0     0    9 2384k      0   549k  0:00:47  0:00:04  0:00:43  560k 12 25.3M    0     0   12 3136k      0   585k  0:00:44  0:00:05  0:00:39  734k 14 25.3M    0     0   14 3856k      0   608k  0:00:42  0:00:06  0:00:36  739k 17 25.3M    0     0   17 4576k      0   622k  0:00:41  0:00:07  0:00:34  738k 20 25.3M    0     0   20 5296k      0   634k  0:00:40  0:00:08  0:00:32  730k 23 25.3M    0     0   23 6016k      0   643k  0:00:40  0:00:09  0:00:31  724k 25 25.3M    0     0   25 6752k      0   653k  0:00:39  0:00:10  0:00:29  725k 28 25.3M    0     0   28 7472k      0   658k  0:00:39  0:00:11  0:00:28  722k 31 25.3M    0     0   31 8192k      0   663k  0:00:39  0:00:12  0:00:27  722k 34 25.3M    0     0   34 8928k      0   669k  0:00:38  0:00:13  0:00:25  726k 37 25.3M    0     0   37 9664k      0   673k  0:00:38  0:00:14  0:00:24  729k 40 25.3M    0     0   40 10.1M      0   677k  0:00:38  0:00:15  0:00:23  728k 42 25.3M    0     0   42 10.8M      0   680k  0:00:38  0:00:16  0:00:22  730k 45 25.3M    0     0   45 11.5M      0   683k  0:00:38  0:00:17  0:00:21  733k 48 25.3M    0     0   48 12.2M      0   684k  0:00:37  0:00:18  0:00:19  726k 51 25.3M    0     0   51 12.9M      0   687k  0:00:37  0:00:19  0:00:18  728k 54 25.3M    0     0   54 13.7M      0   689k  0:00:37  0:00:20  0:00:17  724k 56 25.3M    0     0   56 14.4M      0   692k  0:00:37  0:00:21  0:00:16  729k 59 25.3M    0     0   59 15.1M      0   693k  0:00:37  0:00:22  0:00:15  731k 62 25.3M    0     0   62 15.8M      0   695k  0:00:37  0:00:23  0:00:14  736k 65 25.3M    0     0   65 16.5M      0   697k  0:00:37  0:00:24  0:00:13  734k 68 25.3M    0     0   68 17.2M      0   697k  0:00:37  0:00:25  0:00:12  732k 70 25.3M    0     0   70 17.9M      0   698k  0:00:37  0:00:26  0:00:11  725k 73 25.3M    0     0   73 18.6M      0   699k  0:00:37  0:00:27  0:00:10  723k 76 25.3M    0     0   76 19.3M      0   699k  0:00:37  0:00:28  0:00:09  716k 79 25.3M    0     0   79 20.0M      0   700k  0:00:37  0:00:29  0:00:08  717k 81 25.3M    0     0   81 20.7M      0   701k  0:00:37  0:00:30  0:00:07  723k 84 25.3M    0     0   84 21.5M      0   702k  0:00:36  0:00:31  0:00:05  723k 87 25.3M    0     0   87 22.2M      0   703k  0:00:36  0:00:32  0:00:04  726k 90 25.3M    0     0   90 22.9M      0   704k  0:00:36  0:00:33  0:00:03  733k 93 25.3M    0     0   93 23.6M      0   704k  0:00:36  0:00:34  0:00:02  727k 96 25.3M    0     0   96 24.3M      0   706k  0:00:36  0:00:35  0:00:01  733k 98 25.3M    0     0   98 25.0M      0   706k  0:00:36  0:00:36 --:--:--  734k100 25.3M    0     0  100 25.3M      0   688k  0:00:37  0:00:37 --:--:--  598k100 25.3M    0     0  100 25.3M      0   670k  0:00:38  0:00:38 --:--:--  462k100 25.3M    0     0  100 25.3M      0   670k  0:00:38  0:00:38 --:--:--  400k

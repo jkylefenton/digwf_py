@@ -1,0 +1,33 @@
+26225104
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm26225104/ocm26225104/ocm26225104_MRC.xml http://s3.us.archive.org/26225104.emory.edu/26225104.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  3052    0     0  100  3052      0   1956  0:00:01  0:00:01 --:--:--  2060100  3052    0     0  100  3052      0   1955  0:00:01  0:00:01 --:--:--  2059
+zip -r /temp/ocm26225104_images.zip /mnt/lsdi/ocm26225104/ocm26225104/Output/000000.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000001.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000004.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000005.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000006.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000007.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000008.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000009.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000010.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000011.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000012.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000013.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000014.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000015.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000016.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000017.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000018.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000019.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000020.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000021.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000022.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000023.tif /mnt/lsdi/ocm26225104/ocm26225104/Output/000024.tif
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000000.tif (deflated 75%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000001.tif (deflated 9%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000004.tif (deflated 75%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000005.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000006.tif (deflated 75%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000007.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000008.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000009.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000010.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000011.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000012.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000013.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000014.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000015.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000016.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000017.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000018.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000019.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000020.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000021.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000022.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000023.tif (deflated 75%)
+  adding: mnt/lsdi/ocm26225104/ocm26225104/Output/000024.tif (deflated 75%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm26225104_images.zip http://s3.us.archive.org/26225104.emory.edu/26225104_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  360k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  360k    0     0  100  360k      0   148k  0:00:02  0:00:02 --:--:--  153k100  360k    0     0  100  360k      0   139k  0:00:02  0:00:02 --:--:--  144k100  360k    0     0  100  360k      0   139k  0:00:02  0:00:02 --:--:--  144k

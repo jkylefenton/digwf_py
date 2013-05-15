@@ -1,0 +1,31 @@
+13647467
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm13647467/ocm13647467/ocm13647467_MRC.xml http://s3.us.archive.org/13647467.emory.edu/13647467.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3398    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3398    0     0  100  3398      0   1565  0:00:02  0:00:02 --:--:--  1681100  3398    0     0  100  3398      0   1224  0:00:02  0:00:02 --:--:--  1293100  3398    0     0  100  3398      0    899  0:00:03  0:00:03 --:--:--   936100  3398    0     0  100  3398      0    711  0:00:04  0:00:04 --:--:--   733100  3398    0     0  100  3398      0    587  0:00:05  0:00:05 --:--:--   733100  3398    0     0  100  3398      0    501  0:00:06  0:00:06 --:--:--     0100  3398    0     0  100  3398      0    436  0:00:07  0:00:07 --:--:--     0100  3398    0     0  100  3398      0    386  0:00:08  0:00:08 --:--:--     0100  3398    0     0  100  3398      0    383  0:00:08  0:00:08 --:--:--     0
+zip -r /temp/ocm13647467_images.zip /mnt/lsdi/ocm13647467/ocm13647467/Output/_0001.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0002.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0003.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0004.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0005.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0006.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0007.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0008.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0009.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0010.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0011.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0012.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0013.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0014.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0015.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0016.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0017.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0018.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0019.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0020.tif /mnt/lsdi/ocm13647467/ocm13647467/Output/_0021.tif
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0001.tif (deflated 84%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0002.tif (deflated 8%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0003.tif (deflated 84%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0004.tif (deflated 8%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0005.tif (deflated 84%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0006.tif (deflated 3%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0007.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0008.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0009.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0010.tif (deflated 3%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0011.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0012.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0013.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0014.tif (deflated 3%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0015.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0016.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0017.tif (deflated 5%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0018.tif (deflated 4%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0019.tif (deflated 5%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0020.tif (deflated 84%)
+  adding: mnt/lsdi/ocm13647467/ocm13647467/Output/_0021.tif (deflated 3%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm13647467_images.zip http://s3.us.archive.org/13647467.emory.edu/13647467_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  791k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 24  791k    0     0   24  192k      0   144k  0:00:05  0:00:01  0:00:04  153k 94  791k    0     0   94  752k      0   323k  0:00:02  0:00:02 --:--:--  334k100  791k    0     0  100  791k      0   247k  0:00:03  0:00:03 --:--:--  253k

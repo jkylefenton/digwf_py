@@ -1,0 +1,12 @@
+Bucket ID will be 14846437.emory.edu
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm14846437-5794/ocm14846437/ocm14846437_MRC.xml http://s3.us.archive.org/14846437.5794.emory.edu/14846437.5794.emory.edu_marc.xml
+curl: Can't open '/mnt/lsdi/ocm14846437-5794/ocm14846437/ocm14846437_MRC.xml'!
+curl: try 'curl --help' or 'curl --manual' for more information
+zip -r /temp/ocm14846437_5794_images.zip /mnt/lsdi/ocm14846437-5794/ocm14846437/Output/*.tif
+	zip warning: name not matched: /mnt/lsdi/ocm14846437-5794/ocm14846437/Output/*.tif
+
+zip error: Nothing to do! (try: zip -r /temp/ocm14846437_5794_images.zip . -i /mnt/lsdi/ocm14846437-5794/ocm14846437/Output/*.tif)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm14846437_5794_images.zip http://s3.us.archive.org/14846437.5794.emory.edu/14846437_5794_images.zip
+curl: Can't open '/temp/ocm14846437_5794_images.zip'!
+curl: try 'curl --help' or 'curl --manual' for more information
+rm: cannot remove `/temp/ocm14846437_5794_images.zip': No such file or directory

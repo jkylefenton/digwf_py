@@ -1,0 +1,28 @@
+19467054
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm19467054/ocm19467054/ocm19467054_MRC.xml http://s3.us.archive.org/19467054.emory.edu/19467054.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3863    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  3863    0     0  100  3863      0   2676  0:00:01  0:00:01 --:--:--  2830100  3863    0     0  100  3863      0   2676  0:00:01  0:00:01 --:--:--  2830
+zip -r /temp/ocm19467054_images.zip /mnt/lsdi/ocm19467054/ocm19467054/Output/0001.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0002.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0003.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0004.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0005.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0006.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0007.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0008.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0009.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0010.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0011.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0012.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0013.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0014.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0015.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0016.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0017.tif /mnt/lsdi/ocm19467054/ocm19467054/Output/0018.tif
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0001.tif (deflated 83%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0002.tif (deflated 5%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0003.tif (deflated 83%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0004.tif (deflated 4%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0005.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0006.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0007.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0008.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0009.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0010.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0011.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0012.tif (deflated 4%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0013.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0014.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0015.tif (deflated 3%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0016.tif (deflated 4%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0017.tif (deflated 83%)
+  adding: mnt/lsdi/ocm19467054/ocm19467054/Output/0018.tif (deflated 83%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm19467054_images.zip http://s3.us.archive.org/19467054.emory.edu/19467054_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  790k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 54  790k    0     0   54  432k      0   275k  0:00:02  0:00:01  0:00:01  288k100  790k    0     0  100  790k      0   286k  0:00:02  0:00:02 --:--:--  294k100  790k    0     0  100  790k      0   286k  0:00:02  0:00:02 --:--:--  294k

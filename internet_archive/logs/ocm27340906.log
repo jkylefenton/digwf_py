@@ -1,0 +1,48 @@
+27340906
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm27340906/ocm27340906/ocm27340906_MRC.xml http://s3.us.archive.org/27340906.emory.edu/27340906.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3222    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3222    0     0  100  3222      0   1513  0:00:02  0:00:02 --:--:--  1568100  3222    0     0  100  3222      0   1029  0:00:03  0:00:03 --:--:--  1054100  3222    0     0  100  3222      0    779  0:00:04  0:00:04 --:--:--   794100  3222    0     0  100  3222      0    627  0:00:05  0:00:05 --:--:--   637100  3222    0     0  100  3222      0    525  0:00:06  0:00:06 --:--:--   637100  3222    0     0  100  3222      0    451  0:00:07  0:00:07 --:--:--     0100  3222    0     0  100  3222      0    396  0:00:08  0:00:08 --:--:--     0100  3222    0     0  100  3222      0    352  0:00:09  0:00:09 --:--:--     0100  3222    0     0  100  3222      0    317  0:00:10  0:00:10 --:--:--     0100  3222    0     0  100  3222      0    296  0:00:10  0:00:10 --:--:--     0100  3222    0     0  100  3222      0    271  0:00:11  0:00:11 --:--:--     0100  3222    0     0  100  3222      0    250  0:00:12  0:00:12 --:--:--     0100  3222    0     0  100  3222      0    232  0:00:13  0:00:13 --:--:--     0100  3222    0     0  100  3222      0    216  0:00:14  0:00:14 --:--:--     0100  3222    0     0  100  3222      0    211  0:00:15  0:00:15 --:--:--     0
+zip -r /temp/ocm27340906_images.zip /mnt/lsdi/ocm27340906/ocm27340906/Output/0001.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0002.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0003.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0004.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0005.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0006.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0007.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0008.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0009.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0010.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0011.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0012.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0013.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0014.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0015.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0016.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0017.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0018.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0019.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0020.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0021.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0022.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0023.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0024.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0025.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0026.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0027.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0028.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0029.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0030.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0031.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0032.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0033.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0034.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0035.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0036.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0037.tif /mnt/lsdi/ocm27340906/ocm27340906/Output/0038.tif
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0001.tif (deflated 81%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0002.tif (deflated 6%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0003.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0004.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0005.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0006.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0007.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0008.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0009.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0010.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0011.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0012.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0013.tif (deflated 2%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0014.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0015.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0016.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0017.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0018.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0019.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0020.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0021.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0022.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0023.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0024.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0025.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0026.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0027.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0028.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0029.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0030.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0031.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0032.tif (deflated 3%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0033.tif (deflated 4%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0034.tif (deflated 2%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0035.tif (deflated 2%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0036.tif (deflated 4%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0037.tif (deflated 2%)
+  adding: mnt/lsdi/ocm27340906/ocm27340906/Output/0038.tif (deflated 81%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm27340906_images.zip http://s3.us.archive.org/27340906.emory.edu/27340906_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 1560k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 18 1560k    0     0   18  288k      0   207k  0:00:07  0:00:01  0:00:06  222k 73 1560k    0     0   73 1152k      0   486k  0:00:03  0:00:02  0:00:01  505k100 1560k    0     0  100 1560k      0   408k  0:00:03  0:00:03 --:--:--  418k100 1560k    0     0  100 1560k      0   323k  0:00:04  0:00:04 --:--:--  329k100 1560k    0     0  100 1560k      0   268k  0:00:05  0:00:05 --:--:--  326k100 1560k    0     0  100 1560k      0   228k  0:00:06  0:00:06 --:--:--  234k100 1560k    0     0  100 1560k      0   224k  0:00:06  0:00:06 --:--:-- 91521

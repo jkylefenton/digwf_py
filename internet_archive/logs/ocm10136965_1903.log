@@ -1,0 +1,68 @@
+Bucket ID will be 10136965.emory.edu
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm10136965-1903/ocm10136965/ocm10136965_MRC.xml http://s3.us.archive.org/10136965.1903.emory.edu/10136965.1903.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3417    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3417    0     0  100  3417      0   1634  0:00:02  0:00:02 --:--:--  1694100  3417    0     0  100  3417      0   1105  0:00:03  0:00:03 --:--:--  1132100  3417    0     0  100  3417      0    887  0:00:03  0:00:03 --:--:--   904100  3417    0     0  100  3417      0    704  0:00:04  0:00:04 --:--:--   715100  3417    0     0  100  3417      0    583  0:00:05  0:00:05 --:--:--   715100  3417    0     0  100  3417      0    498  0:00:06  0:00:06 --:--:--     0100  3417    0     0  100  3417      0    435  0:00:07  0:00:07 --:--:--     0100  3417    0     0  100  3417      0    385  0:00:08  0:00:08 --:--:--     0100  3417    0     0  100  3417      0    346  0:00:09  0:00:09 --:--:--     0100  3417    0     0  100  3417      0    328  0:00:10  0:00:10 --:--:--     0
+zip -r /temp/ocm10136965_1903_images.zip /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0001.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0002.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0003.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0004.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0005.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0006.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0007.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0008.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0009.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0010.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0011.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0012.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0013.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0014.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0015.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0016.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0017.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0018.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0019.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0020.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0021.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0022.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0023.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0024.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0025.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0026.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0027.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0028.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0029.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0030.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0031.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0032.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0033.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0034.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0035.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0036.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0037.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0038.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0039.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0040.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0041.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0042.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0043.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0044.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0045.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0046.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0047.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0048.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0049.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0050.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0051.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0052.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0053.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0054.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0055.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0056.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0057.tif /mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0058.tif
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0001.tif (deflated 79%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0002.tif (deflated 16%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0003.tif (deflated 79%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0004.tif (deflated 79%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0005.tif (deflated 1%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0006.tif (deflated 6%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0007.tif (deflated 15%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0008.tif (deflated 6%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0009.tif (deflated 79%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0010.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0011.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0012.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0013.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0014.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0015.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0016.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0017.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0018.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0019.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0020.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0021.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0022.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0023.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0024.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0025.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0026.tif (deflated 3%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0027.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0028.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0029.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0030.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0031.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0032.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0033.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0034.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0035.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0036.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0037.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0038.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0039.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0040.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0041.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0042.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0043.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0044.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0045.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0046.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0047.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0048.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0049.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0050.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0051.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0052.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0053.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0054.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0055.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0056.tif (deflated 3%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0057.tif (deflated 4%)
+  adding: mnt/lsdi/ocm10136965-1903/ocm10136965/Output/ocm10136965_0058.tif (deflated 78%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm10136965_1903_images.zip http://s3.us.archive.org/10136965.1903.emory.edu/10136965_1903_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 1727k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  4 1727k    0     0    4 81920      0  67424  0:00:26  0:00:01  0:00:25 71671 56 1727k    0     0   56  976k      0   444k  0:00:03  0:00:02  0:00:01  459k100 1727k    0     0  100 1727k      0   420k  0:00:04  0:00:04 --:--:--  428k100 1727k    0     0  100 1727k      0   338k  0:00:05  0:00:05 --:--:--  343k100 1727k    0     0  100 1727k      0   282k  0:00:06  0:00:06 --:--:--  343k100 1727k    0     0  100 1727k      0   256k  0:00:06  0:00:06 --:--:--  297k100 1727k    0     0  100 1727k      0   256k  0:00:06  0:00:06 --:--:--  165k

@@ -1,0 +1,58 @@
+26223495
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm26223495/ocm26223495/ocm26223495_MRC.xml http://s3.us.archive.org/26223495.emory.edu/26223495.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3497    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3497    0     0  100  3497      0   1672  0:00:02  0:00:02 --:--:--  1734100  3497    0     0  100  3497      0   1195  0:00:02  0:00:02 --:--:--  1226100  3497    0     0  100  3497      0    890  0:00:03  0:00:03 --:--:--   907100  3497    0     0  100  3497      0    709  0:00:04  0:00:04 --:--:--   720100  3497    0     0  100  3497      0    589  0:00:05  0:00:05 --:--:--   720100  3497    0     0  100  3497      0    504  0:00:06  0:00:06 --:--:--     0100  3497    0     0  100  3497      0    440  0:00:07  0:00:07 --:--:--     0100  3497    0     0  100  3497      0    391  0:00:08  0:00:08 --:--:--     0100  3497    0     0  100  3497      0    352  0:00:09  0:00:09 --:--:--     0100  3497    0     0  100  3497      0    319  0:00:10  0:00:10 --:--:--     0100  3497    0     0  100  3497      0    319  0:00:10  0:00:10 --:--:--     0
+zip -r /temp/ocm26223495_images.zip /mnt/lsdi/ocm26223495/ocm26223495/Output/0001.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0002.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0003.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0004.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0005.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0006.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0007.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0008.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0009.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0010.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0011.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0012.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0013.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0014.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0015.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0016.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0017.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0018.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0019.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0020.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0021.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0022.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0023.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0024.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0025.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0026.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0027.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0028.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0029.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0030.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0031.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0032.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0033.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0034.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0035.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0036.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0037.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0038.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0039.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0040.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0041.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0042.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0043.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0044.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0045.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0046.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0047.tif /mnt/lsdi/ocm26223495/ocm26223495/Output/0048.tif
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0001.tif (deflated 82%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0002.tif (deflated 23%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0003.tif (deflated 7%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0004.tif (deflated 91%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0005.tif (deflated 82%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0006.tif (deflated 96%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0007.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0008.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0009.tif (deflated 88%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0010.tif (deflated 97%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0011.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0012.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0013.tif (deflated 89%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0014.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0015.tif (deflated 87%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0016.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0017.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0018.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0019.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0020.tif (deflated 96%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0021.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0022.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0023.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0024.tif (deflated 96%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0025.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0026.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0027.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0028.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0029.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0030.tif (deflated 96%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0031.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0032.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0033.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0034.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0035.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0036.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0037.tif (deflated 97%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0038.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0039.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0040.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0041.tif (deflated 97%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0042.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0043.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0044.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0045.tif (deflated 93%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0046.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0047.tif (deflated 5%)
+  adding: mnt/lsdi/ocm26223495/ocm26223495/Output/0048.tif (deflated 82%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm26223495_images.zip http://s3.us.archive.org/26223495.emory.edu/26223495_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 6597k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 6597k    0     0    0 32768      0  27684  0:04:04  0:00:01  0:04:03 29600  9 6597k    0     0    9  624k      0   291k  0:00:22  0:00:02  0:00:20  301k 21 6597k    0     0   21 1424k      0   452k  0:00:14  0:00:03  0:00:11  463k 34 6597k    0     0   34 2288k      0   547k  0:00:12  0:00:04  0:00:08  557k 48 6597k    0     0   48 3168k      0   611k  0:00:10  0:00:05  0:00:05  771k 54 6597k    0     0   54 3584k      0   578k  0:00:11  0:00:06  0:00:05  708k 62 6597k    0     0   62 4096k      0   573k  0:00:11  0:00:07  0:00:04  694k 72 6597k    0     0   72 4800k      0   587k  0:00:11  0:00:08  0:00:03  672k 83 6597k    0     0   83 5504k      0   602k  0:00:10  0:00:09  0:00:01  649k 92 6597k    0     0   92 6080k      0   598k  0:00:11  0:00:10  0:00:01  585k 98 6597k    0     0   98 6528k      0   585k  0:00:11  0:00:11 --:--:--  595k100 6597k    0     0  100 6597k      0   535k  0:00:12  0:00:12 --:--:--  482k100 6597k    0     0  100 6597k      0   504k  0:00:13  0:00:13 --:--:--  365k

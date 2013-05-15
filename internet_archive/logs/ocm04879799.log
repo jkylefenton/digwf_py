@@ -1,0 +1,18 @@
+04879799
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm04879799/ocm04879799/ocm04879799_MRC.xml http://s3.us.archive.org/04879799.emory.edu/04879799.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3117    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3117    0     0  100  3117      0   1488  0:00:02  0:00:02 --:--:--  1543100  3117    0     0  100  3117      0    833  0:00:03  0:00:03 --:--:--   850100  3117    0     0  100  3117      0    657  0:00:04  0:00:04 --:--:--   668100  3117    0     0  100  3117      0    542  0:00:05  0:00:05 --:--:--   550100  3117    0     0  100  3117      0    462  0:00:06  0:00:06 --:--:--   550100  3117    0     0  100  3117      0    402  0:00:07  0:00:07 --:--:--     0100  3117    0     0  100  3117      0    356  0:00:08  0:00:08 --:--:--     0100  3117    0     0  100  3117      0    353  0:00:08  0:00:08 --:--:--     0
+zip -r /temp/ocm04879799_images.zip /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0001.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0002.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0003.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0004.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0005.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0006.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0007.tif /mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0008.tif
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0001.tif (deflated 1%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0002.tif (deflated 1%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0003.tif (deflated 5%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0004.tif (deflated 3%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0005.tif (deflated 8%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0006.tif (deflated 6%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0007.tif (deflated 8%)
+  adding: mnt/lsdi/ocm04879799/ocm04879799/Output/ocm04879799_0008.tif (deflated 4%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm04879799_images.zip http://s3.us.archive.org/04879799.emory.edu/04879799_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  404k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  404k    0     0  100  404k      0   192k  0:00:02  0:00:02 --:--:--  199k100  404k    0     0  100  404k      0   192k  0:00:02  0:00:02 --:--:--  199k

@@ -1,0 +1,20 @@
+26224322
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm26224322/ocm26224322/ocm26224322_MRC.xml http://s3.us.archive.org/26224322.emory.edu/26224322.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3277    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3277    0     0  100  3277      0   1412  0:00:02  0:00:02 --:--:--  1622100  3277    0     0  100  3277      0    986  0:00:03  0:00:03 --:--:--  1084100  3277    0     0  100  3277      0    753  0:00:04  0:00:04 --:--:--   809100  3277    0     0  100  3277      0    612  0:00:05  0:00:05 --:--:--   649100  3277    0     0  100  3277      0    516  0:00:06  0:00:06 --:--:--   649100  3277    0     0  100  3277      0    445  0:00:07  0:00:07 --:--:--     0100  3277    0     0  100  3277      0    392  0:00:08  0:00:08 --:--:--     0100  3277    0     0  100  3277      0    350  0:00:09  0:00:09 --:--:--     0100  3277    0     0  100  3277      0    341  0:00:09  0:00:09 --:--:--     0
+zip -r /temp/ocm26224322_images.zip /mnt/lsdi/ocm26224322/ocm26224322/Output/0001.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0002.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0003.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0004.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0005.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0006.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0007.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0008.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0009.tif /mnt/lsdi/ocm26224322/ocm26224322/Output/0010.tif
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0001.tif (deflated 79%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0002.tif (deflated 8%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0003.tif (deflated 79%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0004.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0005.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0006.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0007.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0008.tif (deflated 2%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0009.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224322/ocm26224322/Output/0010.tif (deflated 79%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm26224322_images.zip http://s3.us.archive.org/26224322.emory.edu/26224322_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  204k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 70  204k    0     0   70  144k      0   111k  0:00:01  0:00:01 --:--:--  118k100  204k    0     0  100  204k      0  74954  0:00:02  0:00:02 --:--:-- 77044100  204k    0     0  100  204k      0  55155  0:00:03  0:00:03 --:--:-- 56281100  204k    0     0  100  204k      0  43630  0:00:04  0:00:04 --:--:-- 44333100  204k    0     0  100  204k      0  36095  0:00:05  0:00:05 --:--:-- 44333100  204k    0     0  100  204k      0  30780  0:00:06  0:00:06 --:--:-- 11217100  204k    0     0  100  204k      0  29447  0:00:07  0:00:07 --:--:--     0

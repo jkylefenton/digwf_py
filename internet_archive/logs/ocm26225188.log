@@ -1,0 +1,24 @@
+26225188
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm26225188/ocm26225188/ocm26225188_MRC.xml http://s3.us.archive.org/26225188.emory.edu/26225188.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3011    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  3011    0     0  100  3011      0   2562  0:00:01  0:00:01 --:--:--  2951100  3011    0     0  100  3011      0   1383  0:00:02  0:00:02 --:--:--  1489100  3011    0     0  100  3011      0    947  0:00:03  0:00:03 --:--:--   996100  3011    0     0  100  3011      0    640  0:00:04  0:00:04 --:--:--   661100  3011    0     0  100  3011      0    527  0:00:05  0:00:05 --:--:--   661100  3011    0     0  100  3011      0    448  0:00:06  0:00:06 --:--:--     0100  3011    0     0  100  3011      0    390  0:00:07  0:00:07 --:--:--     0100  3011    0     0  100  3011      0    345  0:00:08  0:00:08 --:--:--     0100  3011    0     0  100  3011      0    310  0:00:09  0:00:09 --:--:--     0100  3011    0     0  100  3011      0    281  0:00:10  0:00:10 --:--:--     0100  3011    0     0  100  3011      0    263  0:00:11  0:00:11 --:--:--     0100  3011    0     0  100  3011      0    263  0:00:11  0:00:11 --:--:--     0
+zip -r /temp/ocm26225188_images.zip /mnt/lsdi/ocm26225188/ocm26225188/Output/_0001.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0002.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0003.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0004.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0005.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0006.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0007.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0008.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0009.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0010.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0011.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0012.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0013.tif /mnt/lsdi/ocm26225188/ocm26225188/Output/_0014.tif
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0001.tif (deflated 80%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0002.tif (deflated 12%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0003.tif (deflated 80%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0004.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0005.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0006.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0007.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0008.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0009.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0010.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0011.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0012.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0013.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26225188/ocm26225188/Output/_0014.tif (deflated 80%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm26225188_images.zip http://s3.us.archive.org/26225188.emory.edu/26225188_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  232k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  232k    0     0  100  232k      0  92302  0:00:02  0:00:02 --:--:-- 95336100  232k    0     0  100  232k      0  88653  0:00:02  0:00:02 --:--:-- 91453

@@ -1,0 +1,30 @@
+26224732
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm26224732/ocm26224732/ocm26224732_MRC.xml http://s3.us.archive.org/26224732.emory.edu/26224732.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3481    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  3481    0     0  100  3481      0   2261  0:00:01  0:00:01 --:--:--  2371100  3481    0     0  100  3481      0   2261  0:00:01  0:00:01 --:--:--  2371
+zip -r /temp/ocm26224732_images.zip /mnt/lsdi/ocm26224732/ocm26224732/Output/0001.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0002.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0003.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0004.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0005.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0006.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0007.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0008.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0009.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0010.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0011.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0012.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0013.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0014.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0015.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0016.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0017.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0018.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0019.tif /mnt/lsdi/ocm26224732/ocm26224732/Output/0020.tif
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0001.tif (deflated 65%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0002.tif (deflated 20%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0003.tif (deflated 77%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0004.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0005.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0006.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0007.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0008.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0009.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0010.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0011.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0012.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0013.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0014.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0015.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0016.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0017.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0018.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0019.tif (deflated 4%)
+  adding: mnt/lsdi/ocm26224732/ocm26224732/Output/0020.tif (deflated 65%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm26224732_images.zip http://s3.us.archive.org/26224732.emory.edu/26224732_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  551k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 40  551k    0     0   40  224k      0   167k  0:00:03  0:00:01  0:00:02  176k100  551k    0     0  100  551k      0   225k  0:00:02  0:00:02 --:--:--  232k100  551k    0     0  100  551k      0   225k  0:00:02  0:00:02 --:--:--  232k

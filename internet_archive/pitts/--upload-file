@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist.</Message><Resource>02582696.emory.edu not found by Metadata::get_obj()[server]</Resource><RequestId>38ef4829-0fad-47e0-9b92-69c7dd4e519f</RequestId></Error>

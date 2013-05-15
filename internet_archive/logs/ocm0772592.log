@@ -1,0 +1,8 @@
+0772592
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta01-collection:medicalheritagelibrary --header x-archive-meta03-collection:emory --header x-archive-meta-sponsor:Emory University, Woodruff Health Sciences Center Library --header x-archive-meta-contributor:Emory University, Woodruff Health Sciences Center Library --header x-archive-meta-ppi:400 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi2/ocm0772592-5809/ocm0772592/ocm0772592_MRC.xml http://s3.us.archive.org/0772592.5809.emory.edu/0772592.5809.emory.edu_marc.xml
+curl: Can't open '/mnt/lsdi2/ocm0772592-5809/ocm0772592/ocm0772592_MRC.xml'!
+curl: try 'curl --help' or 'curl --manual' for more information
+zip -r /temp/ocm0772592_5809_images.zip /mnt/lsdi2/ocm0772592-5809/ocm0772592/Output/Images/JP2
+	zip warning: name not matched: /mnt/lsdi2/ocm0772592-5809/ocm0772592/Output/Images/JP2
+
+zip error: Nothing to do! (try: zip -r /temp/ocm0772592_5809_images.zip . -i /mnt/lsdi2/ocm0772592-5809/ocm0772592/Output/Images/JP2)

@@ -1,0 +1,18 @@
+Bucket ID will be 26225167.emory.edu
+curl --location --header x-amz-auto-make-bucket:1 --header x-archive-ignore-preexisting-bucket:1 --header x-archive-queue-derive:0 --header x-archive-meta-mediatype:texts --header x-archive-meta03-collection:emory --header x-archive-meta01-collection:americanmethodism --header x-archive-meta-sponsor:Emory University, Pitts Theology Library --header x-archive-meta-contributor:Emory University, Pitts Theology Library --header x-archive-meta-ppi:300 --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /mnt/lsdi/ocm26225167-2614/ocm26225167/ocm26225167_MRC.xml http://s3.us.archive.org/26225167.2614.emory.edu/26225167.2614.emory.edu_marc.xml
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3037    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  3037    0     0  100  3037      0   1577  0:00:01  0:00:01 --:--:--  1638100  3037    0     0  100  3037      0   1077  0:00:02  0:00:02 --:--:--  1105100  3037    0     0  100  3037      0   1077  0:00:02  0:00:02 --:--:--  1105
+zip -r /temp/ocm26225167_2614_images.zip /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0001.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0002.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0003.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0004.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0005.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0006.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0007.tif /mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0008.tif
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0001.tif (deflated 82%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0002.tif (deflated 2%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0003.tif (deflated 82%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0004.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0005.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0006.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0007.tif (deflated 3%)
+  adding: mnt/lsdi/ocm26225167-2614/ocm26225167/Output/0008.tif (deflated 4%)
+curl --location --header authorization: LOW fpJYfLnxbLmCEHqU:JQbq6NgBaPrSh98Y --upload-file /temp/ocm26225167_2614_images.zip http://s3.us.archive.org/26225167.2614.emory.edu/26225167_2614_images.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  795k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 78  795k    0     0   78  624k      0   388k  0:00:02  0:00:01  0:00:01  407k100  795k    0     0  100  795k      0   288k  0:00:02  0:00:02 --:--:--  296k100  795k    0     0  100  795k      0   272k  0:00:02  0:00:02 --:--:--  279k
