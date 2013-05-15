@@ -1,0 +1,15 @@
+digwf/ 
+
+contains code for a once envisioned replacement for Emory's Ruby on Rails based Digitization Workflow application.  Not being actively developed as of May 2013, since Kirtas' LIMB software has built in workflow management for book digitization.  We might get back to developing this new prototype if
+the team's workflow becomes more complex in the future
+
+repo_checker/ 
+
+one table 'eul_record' now helps track book volumes before (what is the viable pool of public domain materials in Emory's holdings?  Did anyone else digitize a candidate volume already?) and after (what's the Internet Archive url after we submit?  what's the Hathi Trust url?) the digitization process
+
+a second table 'hath trust_items' is based upon periodic data dumps from Hathi Trust, filtering down to only those items that are world accessible
+
+
+internet_archive/ 
+
+crude but effective shell scripts that run manually to upload digitized books to the Internet Archive, using curl and IA' S3 like API
